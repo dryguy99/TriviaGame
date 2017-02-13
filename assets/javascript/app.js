@@ -30,11 +30,11 @@ var qeighty3 = {
 		image: ""
 }
 var qeighty4 = {
-		question: "Who won th Grasmmy for Best Rock Vocal Group in 1980",
-		ans1: "",
-		ans2: "",
+		question: "Who won th Grammy for Best Rock Vocal Group in 1980",
+		ans1: "The Blues Brothers - Briefcase Full of Blues",
+		ans2: "Styx - Cornerstone",
 		ans3: "The Eagles - Heartache Tonight",
-		ans4: "",
+		ans4: "Dire Straits - Sultans Of Swing",
 		correctAn: qeighty4.ans3,
 		image: ""
 }
@@ -71,7 +71,7 @@ var qeighty8 = {
 		ans2: "",
 		ans3: "",
 		ans4: "",
-		correctAn: qeighty1.ans1,
+		correctAn: qeighty8.ans1,
 		image: ""
 }
 var qeighty9 = {
@@ -80,7 +80,7 @@ var qeighty9 = {
 		ans2: "",
 		ans3: "",
 		ans4: "",
-		correctAn: qeighty1.ans1,
+		correctAn: qeighty9.ans1,
 		image: ""
 }
 var qeighty10 = {
@@ -89,7 +89,7 @@ var qeighty10 = {
 		ans2: "",
 		ans3: "",
 		ans4: "",
-		correctAn: qeighty1.ans1,
+		correctAn: qeighty10.ans1,
 		image: ""
 }
 var qeighty11 = {
@@ -98,7 +98,87 @@ var qeighty11 = {
 		ans2: "",
 		ans3: "",
 		ans4: "",
-		correctAn: qeighty1.ans1,
+		correctAn: qeighty11.ans1,
+		image: ""
+}
+var qeighty12 = {
+		question: "",
+		ans1: "",
+		ans2: "",
+		ans3: "",
+		ans4: "",
+		correctAn: qeighty12.ans1,
+		image: ""
+}
+var qeighty13 = {
+		question: "",
+		ans1: "",
+		ans2: "",
+		ans3: "",
+		ans4: "",
+		correctAn: qeighty13.ans1,
+		image: ""
+}
+var qeighty14 = {
+		question: "",
+		ans1: "",
+		ans2: "",
+		ans3: "",
+		ans4: "",
+		correctAn: qeighty14.ans1,
+		image: ""
+}
+var qeighty15 = {
+		question: "",
+		ans1: "",
+		ans2: "",
+		ans3: "",
+		ans4: "",
+		correctAn: qeighty15.ans1,
+		image: ""
+}
+var qeighty16 = {
+		question: "",
+		ans1: "",
+		ans2: "",
+		ans3: "",
+		ans4: "",
+		correctAn: qeighty16.ans1,
+		image: ""
+}
+var qeighty17 = {
+		question: "",
+		ans1: "",
+		ans2: "",
+		ans3: "",
+		ans4: "",
+		correctAn: qeighty17.ans1,
+		image: ""
+}
+var qeighty18 = {
+		question: "",
+		ans1: "",
+		ans2: "",
+		ans3: "",
+		ans4: "",
+		correctAn: qeighty18.ans1,
+		image: ""
+}var qeighty19 = {
+		question: "",
+		ans1: "",
+		ans2: "",
+		ans3: "",
+		ans4: "",
+		correctAn: qeighty19.ans1,
+		image: ""
+}
+var qeighty20 = {
+		question: "",
+		ans1: "",
+		ans2: "",
+		ans3: "",
+		ans4: "",
+		correctAn: qeighty20.ans1,
 		image: ""
 }
 
