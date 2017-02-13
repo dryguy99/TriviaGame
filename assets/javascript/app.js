@@ -8,7 +8,7 @@ var qeighty1 = {
 		ans2: "Don't Worry, Be Happy",
 		ans3: "Giving You The Best That I Got",
 		ans4: "Fast Car",
-		correctAn: qeighty1.ans1,
+		correctAn: 1,
 		image: ""
 }
 var qeighty2 = {
@@ -17,7 +17,7 @@ var qeighty2 = {
 		ans2: "Jonathan Winters - Jonathan Winters Finally Captured",
 		ans3: "George Carlin - What Am I Doing in New Jersey?",
 		ans4: "Robin Williams - Good Morning, Vietnam",
-		correctAn: qeighty2.ans4,
+		correctAn: 4,
 		image: ""
 }
 var qeighty3 = {
@@ -26,7 +26,7 @@ var qeighty3 = {
 		ans2: "Billy Joel - 52nd Street",
 		ans3: "The Doobie Brothers - Minute By Minute",
 		ans4: "Kenny Rogers - The Gambler",
-		correctAn: qeighty3.ans2,
+		correctAn: 2,
 		image: ""
 }
 var qeighty4 = {
@@ -35,7 +35,7 @@ var qeighty4 = {
 		ans2: "Styx - Cornerstone",
 		ans3: "The Eagles - Heartache Tonight",
 		ans4: "Dire Straits - Sultans Of Swing",
-		correctAn: qeighty4.ans3,
+		correctAn: 3,
 		image: ""
 }
 var qeighty5 = {
@@ -44,7 +44,7 @@ var qeighty5 = {
 		ans2: "Back to the Future",
 		ans3: "Witness",
 		ans4: "Beverly Hills Cop",
-		correctAn: qeighty5.ans4,
+		correctAn: 4,
 		image: ""
 }
 var qeighty6 = {
@@ -53,7 +53,7 @@ var qeighty6 = {
 		ans2: "Harold Faitermeyer - Axel F",
 		ans3: "David Foster - Love Theme from St. Elmo's Fire",
 		ans4: "Spyro Gyra - Shake Down",
-		correctAn: qeighty6.ans1,
+		correctAn: 1,
 		image: ""
 }
 var qeighty7 = {
@@ -62,7 +62,7 @@ var qeighty7 = {
 		ans2: "Don Henley, Mike Campbell - The Boys of Summer",
 		ans3: "Michael Jackson, Lionel Richie - We Are the World",
 		ans4: "Mick Jones - I Want to Know What Love Is",
-		correctAn: qeighty7.ans3,
+		correctAn: 3,
 		image: ""
 }
 var qeighty8 = {
@@ -71,7 +71,7 @@ var qeighty8 = {
 		ans2: "The Police",
 		ans3: "REO Speedwagon",
 		ans4: "Stevie Nicks with Tom Petty and the Heartbreakers",
-		correctAn: qeighty8.ans2,
+		correctAn: 2,
 		image: ""
 }
 var qeighty9 = {
@@ -80,105 +80,120 @@ var qeighty9 = {
 		ans2: "Steely Dan - Gaucho Lyrics",
 		ans3: "Daryl Hall, John Oates - Private Eyes",
 		ans4: "Pointer Sisters - Slow Hand",
-		correctAn: qeighty9.ans1,
+		correctAn: 1,
 		image: ""
 }
 var qeighty10 = {
-		question: "In 1985, which movie won the Grammy for Best Album Of Original Score Written For A Motion Picture?",
+		question: "In 1985, which movie won the Best Album Of Original Score Written For A Motion Picture Grammy?",
 		ans1: "Against All Odds",
 		ans2: "Purple Rain",
 		ans3: "Ghostbusters",
 		ans4: "Footloose",
-		correctAn: qeighty10.ans2,
+		correctAn: 2,
 		image: ""
 }
 var qeighty11 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty11.ans1,
+		question: "Who won the 1985 Best New Artist Grammy?",
+		ans1: "Frankie Goes To Hollywood",
+		ans2: "The Judds",
+		ans3: "Cyndi Lauper",
+		ans4: "Corey Hart",
+		correctAn: 3,
 		image: ""
 }
 var qeighty12 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty12.ans1,
+		question: "Who won the 1988 Album of the Year Grammy?",
+		ans1: "Whitney Houston - Whitney",
+		ans2: "Michael Jackson - Bad",
+		ans3: "Prince - Sing O' the Times",
+		ans4: "U2 - The Joshua Tree",
+		correctAn: 4,
 		image: ""
 }
 var qeighty13 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty13.ans1,
+		question: "Who won the Best Rock Vocal Performance in 1988?",
+		ans1: "Tina Turner - Better Be Good To Me",
+		ans2: "Bob Seger - Shakedown",
+		ans3: "Joe Cocker - Unchain My Heart",
+		ans4: "Bruce Springsteen - Tunnel Of Love",
+		correctAn: 4,
 		image: ""
 }
 var qeighty14 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty14.ans1,
+		question: "Who won the 1981 Album of the Year Grammy?",
+		ans1: "Billy Joel - Glass Houses",
+		ans2: "Frank Sinatra - Trilogy: Past, Present, Future",
+		ans3: "Christopher Cross - Christopher Cross",
+		ans4: "Pink Floyd - The Wall",
+		correctAn: 3,
 		image: ""
 }
 var qeighty15 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty15.ans1,
+		question: "In 1981, the Grammy for Best Pop Female Vocalist was won by:",
+		ans1: "Olivia Newton-John - Magic",
+		ans2: "Bette Midler - The Rose",
+		ans3: "Donna Summer - On The Radio",
+		ans4: "Barbra Streisand - Woman in Love",
+		correctAn: 2,
 		image: ""
 }
 var qeighty16 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty16.ans1,
+		question: "The 1983 Grammy for Best Rock Male Vocalist was:",
+		ans1: "John Cougar - Hurts So Good",
+		ans2: "Don Henley - Dirty Laundry",
+		ans3: "Rod Stewart - Tonight I'm Yours",
+		ans4: "Peter Gabriel - Shock The Monkey",
+		correctAn: 1,
 		image: ""
 }
 var qeighty17 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty17.ans1,
+		question: "The 1983 Grammy winner for Record of the Year winner was:",
+		ans1: "Paul McCartney, Stevie Wonder - Ebony and Ivory",
+		ans2: "Toto - Rosanna",
+		ans3: "Willie Nelson - Always On My Mind",
+		ans4: "Joe Jackson - Steppin' Out",
+		correctAn: 2,
 		image: ""
 }
 var qeighty18 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty18.ans1,
+		question: "The 1982 Grammy winner for Best New Artist was:",
+		ans1: "The Go-Go's",
+		ans2: "Luther Vandross",
+		ans3: "Sheena Easton",
+		ans4: "Adam And The Ants",
+		correctAn: 3,
 		image: ""
 }var qeighty19 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty19.ans1,
+		question: "The 1982 winner for the Best Rock Male Vocalist Grammy was:",
+		ans1: "Rick James - Superfreak",
+		ans2: "Bruce Springsteen - The River",
+		ans3: "Rod Stewart - Young Turks",
+		ans4: "Rick Springfield - Jesse's Girl",
+		correctAn: 4,
 		image: ""
 }
 var qeighty20 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty20.ans1,
+		question: "The Record of the Year Grammy winner for 1987 was:",
+		ans1: "Peter Gabriel - Sledgehammer",
+		ans2: "Steve Winwood - Higher Love",
+		ans3: "Robert Palmer - Addicted To Love",
+		ans4: "Whitney Houston - Greatest Love Of All",
+		correctAn: 2,
 		image: ""
 }
+var qeighty21 = {
+		question: "In 1987, the Song of the Year Grammy winner was:",
+		ans1: "Paul Simon - Graceland",
+		ans2: "Robert Palmer - Addicted To Love",
+		ans3: "Steve Winwood, Will Jennings - Higher Love",
+		ans4: "Burt Bacharach, Carole Bayer Sager - That's What Friends Are For",
+		correctAn: 4,
+		image: ""
+}
+
+var currentQ = "";
+var qtimeLimit = 15000;
+var qanswerTime = 4000;
+var corrAnswer = 0;
+
 
