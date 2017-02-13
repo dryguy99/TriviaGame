@@ -1,0 +1,33 @@
+body {
+	background: url("../images/bodybg.jpg");
+	max-width: 750px;
+	margin: 2px auto;
+}
+h1 {
+	font-family: 'New Rocker', cursive;
+	font-size: 75px;
+	font-weight: 600;
+	padding: 10px;
+}
+#game {
+	background-image: url("../images/gamebg.jpg");
+	min-height: 300px;
+	border-radius: 25px;
+	
+}
+div#questions {
+	font-family: 'Mukta Vaani', sans-serif;
+}
+div#answers {
+font-family: 'Mada', sans-serif;
+}
+footer {
+	color: white;
+}
+
+@media only screen && (max-width: 450px){
+	h1 {
+		font-size: 50px;
+		font-weight: 400;
+	}
+}
