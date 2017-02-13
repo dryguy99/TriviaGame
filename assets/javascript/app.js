@@ -10,7 +10,7 @@ var qeighty1 = {
 		ans4: "Fast Car",
 		correctAn: 1,
 		image: ""
-}
+};
 var qeighty2 = {
 		question: "In 1989, who win the Grammy for Best Comedy Recording?",
 		ans1: "Whoopi Goldberg - Fontaine: Why Am I Straight?",
@@ -19,7 +19,7 @@ var qeighty2 = {
 		ans4: "Robin Williams - Good Morning, Vietnam",
 		correctAn: 4,
 		image: ""
-}
+};
 var qeighty3 = {
 		question: "Who won the Grammy for Album of the Year in 1980?",
 		ans1: "Donna Summer - Bad Girls Lyrics",
@@ -28,7 +28,7 @@ var qeighty3 = {
 		ans4: "Kenny Rogers - The Gambler",
 		correctAn: 2,
 		image: ""
-}
+};
 var qeighty4 = {
 		question: "Who won th Grammy for Best Rock Vocal Group in 1980?",
 		ans1: "The Blues Brothers - Briefcase Full of Blues",
@@ -37,7 +37,7 @@ var qeighty4 = {
 		ans4: "Dire Straits - Sultans Of Swing",
 		correctAn: 3,
 		image: ""
-}
+};
 var qeighty5 = {
 		question: "In 1986, which movie won the Grammy for Best Album or Original Score?",
 		ans1: "St. Elmo's Fire",
@@ -46,7 +46,7 @@ var qeighty5 = {
 		ans4: "Beverly Hills Cop",
 		correctAn: 4,
 		image: ""
-}
+};
 var qeighty6 = {
 		question: "In 1986, who won the Grammy for Best Pop Instrumental Performance?",
 		ans1: "Jan Hammer - Miami Vice Theme",
@@ -55,7 +55,7 @@ var qeighty6 = {
 		ans4: "Spyro Gyra - Shake Down",
 		correctAn: 1,
 		image: ""
-}
+};
 var qeighty7 = {
 		question: "Who won the 1986 Grammy for Song of the year?",
 		ans1: "Mark Koopfler, Sting - Money for Nothing",
@@ -64,7 +64,7 @@ var qeighty7 = {
 		ans4: "Mick Jones - I Want to Know What Love Is",
 		correctAn: 3,
 		image: ""
-}
+};
 var qeighty8 = {
 		question: "Who won the 1982 Grammy for Best Rock Vocal Group?",
 		ans1: "Foreigner",
@@ -73,7 +73,7 @@ var qeighty8 = {
 		ans4: "Stevie Nicks with Tom Petty and the Heartbreakers",
 		correctAn: 2,
 		image: ""
-}
+};
 var qeighty9 = {
 		question: "In 1982, who won the Grammy for Best Pop Vocal Group?",
 		ans1: "Diana Ross, Lionel Richie - Endless Love",
@@ -82,7 +82,7 @@ var qeighty9 = {
 		ans4: "Pointer Sisters - Slow Hand",
 		correctAn: 1,
 		image: ""
-}
+};
 var qeighty10 = {
 		question: "In 1985, which movie won the Best Album Of Original Score Written For A Motion Picture Grammy?",
 		ans1: "Against All Odds",
@@ -91,7 +91,7 @@ var qeighty10 = {
 		ans4: "Footloose",
 		correctAn: 2,
 		image: ""
-}
+};
 var qeighty11 = {
 		question: "Who won the 1985 Best New Artist Grammy?",
 		ans1: "Frankie Goes To Hollywood",
@@ -100,7 +100,7 @@ var qeighty11 = {
 		ans4: "Corey Hart",
 		correctAn: 3,
 		image: ""
-}
+};
 var qeighty12 = {
 		question: "Who won the 1988 Album of the Year Grammy?",
 		ans1: "Whitney Houston - Whitney",
@@ -109,7 +109,7 @@ var qeighty12 = {
 		ans4: "U2 - The Joshua Tree",
 		correctAn: 4,
 		image: ""
-}
+};
 var qeighty13 = {
 		question: "Who won the Best Rock Vocal Performance in 1988?",
 		ans1: "Tina Turner - Better Be Good To Me",
@@ -118,7 +118,7 @@ var qeighty13 = {
 		ans4: "Bruce Springsteen - Tunnel Of Love",
 		correctAn: 4,
 		image: ""
-}
+};
 var qeighty14 = {
 		question: "Who won the 1981 Album of the Year Grammy?",
 		ans1: "Billy Joel - Glass Houses",
@@ -127,7 +127,7 @@ var qeighty14 = {
 		ans4: "Pink Floyd - The Wall",
 		correctAn: 3,
 		image: ""
-}
+};
 var qeighty15 = {
 		question: "In 1981, the Grammy for Best Pop Female Vocalist was won by:",
 		ans1: "Olivia Newton-John - Magic",
@@ -136,7 +136,7 @@ var qeighty15 = {
 		ans4: "Barbra Streisand - Woman in Love",
 		correctAn: 2,
 		image: ""
-}
+};
 var qeighty16 = {
 		question: "The 1983 Grammy for Best Rock Male Vocalist was:",
 		ans1: "John Cougar - Hurts So Good",
@@ -145,7 +145,7 @@ var qeighty16 = {
 		ans4: "Peter Gabriel - Shock The Monkey",
 		correctAn: 1,
 		image: ""
-}
+};
 var qeighty17 = {
 		question: "The 1983 Grammy winner for Record of the Year winner was:",
 		ans1: "Paul McCartney, Stevie Wonder - Ebony and Ivory",
@@ -154,7 +154,7 @@ var qeighty17 = {
 		ans4: "Joe Jackson - Steppin' Out",
 		correctAn: 2,
 		image: ""
-}
+};
 var qeighty18 = {
 		question: "The 1982 Grammy winner for Best New Artist was:",
 		ans1: "The Go-Go's",
@@ -163,7 +163,7 @@ var qeighty18 = {
 		ans4: "Adam And The Ants",
 		correctAn: 3,
 		image: ""
-}
+};
 var qeighty19 = {
 		question: "The 1982 winner for the Best Rock Male Vocalist Grammy was:",
 		ans1: "Rick James - Superfreak",
@@ -172,7 +172,7 @@ var qeighty19 = {
 		ans4: "Rick Springfield - Jesse's Girl",
 		correctAn: 4,
 		image: ""
-}
+};
 var qeighty20 = {
 		question: "The Record of the Year Grammy winner for 1987 was:",
 		ans1: "Peter Gabriel - Sledgehammer",
@@ -181,7 +181,7 @@ var qeighty20 = {
 		ans4: "Whitney Houston - Greatest Love Of All",
 		correctAn: 2,
 		image: ""
-}
+};
 var qeighty21 = {
 		question: "In 1987, the Song of the Year Grammy winner was:",
 		ans1: "Paul Simon - Graceland",
@@ -190,7 +190,7 @@ var qeighty21 = {
 		ans4: "Burt Bacharach, Carole Bayer Sager - That's What Friends Are For",
 		correctAn: 4,
 		image: ""
-}
+};
 
 var currentQ = "";
 var qtimeLimit = 15000;
@@ -244,10 +244,10 @@ $(document).ready(initialize());
 	console.log("ready");
 directions();
 $(document).on("click", function () {
-	for (i=0; i < 9; ++i) {
+	for (var i=0; i < 9; ++i) {
 		pickQuestion();
 	}
 
-})
+});
 
 
