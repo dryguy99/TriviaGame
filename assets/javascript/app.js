@@ -30,7 +30,7 @@ var qeighty3 = {
 		image: ""
 }
 var qeighty4 = {
-		question: "Who won th Grammy for Best Rock Vocal Group in 1980",
+		question: "Who won th Grammy for Best Rock Vocal Group in 1980?",
 		ans1: "The Blues Brothers - Briefcase Full of Blues",
 		ans2: "Styx - Cornerstone",
 		ans3: "The Eagles - Heartache Tonight",
@@ -39,57 +39,57 @@ var qeighty4 = {
 		image: ""
 }
 var qeighty5 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty5.ans1,
+		question: "In 1986, which movie won the Grammy for Best Album or Original Score?",
+		ans1: "St. Elmo's Fire",
+		ans2: "Back to the Future",
+		ans3: "Witness",
+		ans4: "Beverly Hills Cop",
+		correctAn: qeighty5.ans4,
 		image: ""
 }
 var qeighty6 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
+		question: "In 1986, who won the Grammy for Best Pop Instrumental Performance?",
+		ans1: "Jan Hammer - Miami Vice Theme",
+		ans2: "Harold Faitermeyer - Axel F",
+		ans3: "David Foster - Love Theme from St. Elmo's Fire",
+		ans4: "Spyro Gyra - Shake Down",
 		correctAn: qeighty6.ans1,
 		image: ""
 }
 var qeighty7 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty7.ans1,
+		question: "Who won the 1986 Grammy for Song of the year?",
+		ans1: "Mark Koopfler, Sting - Money for Nothing",
+		ans2: "Don Henley, Mike Campbell - The Boys of Summer",
+		ans3: "Michael Jackson, Lionel Richie - We Are the World",
+		ans4: "Mick Jones - I Want to Know What Love Is",
+		correctAn: qeighty7.ans3,
 		image: ""
 }
 var qeighty8 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty8.ans1,
+		question: "Who won the 1982 Grammy for Best Rock Vocal Group?",
+		ans1: "Foreigner",
+		ans2: "The Police",
+		ans3: "REO Speedwagon",
+		ans4: "Stevie Nicks with Tom Petty and the Heartbreakers",
+		correctAn: qeighty8.ans2,
 		image: ""
 }
 var qeighty9 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
+		question: "In 1982, who won the Grammy for Best Pop Vocal Group?",
+		ans1: "Diana Ross, Lionel Richie - Endless Love",
+		ans2: "Steely Dan - Gaucho Lyrics",
+		ans3: "Daryl Hall, John Oates - Private Eyes",
+		ans4: "Pointer Sisters - Slow Hand",
 		correctAn: qeighty9.ans1,
 		image: ""
 }
 var qeighty10 = {
-		question: "",
-		ans1: "",
-		ans2: "",
-		ans3: "",
-		ans4: "",
-		correctAn: qeighty10.ans1,
+		question: "In 1985, which movie won the Grammy for Best Album Of Original Score Written For A Motion Picture?",
+		ans1: "Against All Odds",
+		ans2: "Purple Rain",
+		ans3: "Ghostbusters",
+		ans4: "Footloose",
+		correctAn: qeighty10.ans2,
 		image: ""
 }
 var qeighty11 = {
