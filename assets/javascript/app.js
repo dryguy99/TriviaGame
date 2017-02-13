@@ -163,7 +163,8 @@ var qeighty18 = {
 		ans4: "Adam And The Ants",
 		correctAn: 3,
 		image: ""
-}var qeighty19 = {
+}
+var qeighty19 = {
 		question: "The 1982 winner for the Best Rock Male Vocalist Grammy was:",
 		ans1: "Rick James - Superfreak",
 		ans2: "Bruce Springsteen - The River",
@@ -196,4 +197,15 @@ var qtimeLimit = 15000;
 var qanswerTime = 4000;
 var corrAnswer = 0;
 
+
+function initialize () {
+	currentQ = "";
+	corrAnswer = 0;
+	qtimeLimit = 15000;
+	qanswerTime = 4000;
+	setupDisplay();
+}
+function setupDisplay () {
+	$("#question").append("")
+}
 

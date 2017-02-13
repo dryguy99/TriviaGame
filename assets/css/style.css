@@ -13,14 +13,8 @@ h1 {
 	background-image: url("../images/gamebg.jpg");
 	min-height: 300px;
 	border-radius: 25px;
-	
 }
-div#questions {
-	font-family: 'Mukta Vaani', sans-serif;
-}
-div#answers {
-font-family: 'Mada', sans-serif;
-}
+
 footer {
 	color: white;
 }
@@ -31,3 +25,61 @@ footer {
 		font-weight: 400;
 	}
 }
+#question {
+	font-family: 'Mukta Vaani', sans-serif;
+	font-weight: 600;
+	display: table;
+	width: 500px;
+	height: 120px;
+	margin: 10px auto;
+	background-color: #fff2e6;
+	color: blue;
+	font-size: 30px;
+	line-height: 1.2;
+	white-space: normal;
+	padding: 10px;
+	border-radius: 25px;
+}
+.btn {
+	font-family: 'Mada', sans-serif;
+	display: table;
+	width: 500px;
+	max-height: 80px;
+	margin: 5px auto;
+	background-color: #ffffcc;
+	color: blue;
+	font-size: 20px;
+	line-height: 1.1;
+	white-space: normal;
+	padding: 10px;
+	border-radius: 25px;
+
+}
+.btn:hover {
+	background-color: #ffdd99;
+	border-color: #cc8800;
+
+}
+
+/*#ans1 {
+	display: block;
+	
+}
+#ans2 {
+	display: list-item;
+	width: 100px;
+	height: 50px;
+	background-color: #ffffcc;
+}
+#ans3 {
+	display: list-item;
+	width: 100px;
+	height: 50px;
+	background-color: #ffffcc;
+}
+#ans4 {
+	display: list-item;
+	width: 100px;
+	height: 50px;
+	background-color: #ffffcc;
+}*/
