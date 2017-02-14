@@ -203,51 +203,56 @@ function initialize () {
 	corrAnswer = 0;
 	qtimeLimit = 15000;
 	qanswerTime = 4000;
+	toggleonQ();
+	toggleoffA();
 	console.log("initialize");
 }
 
-function toggleonQandA () {
-	$("#question").css("display", "table");
-	$("#answer").css("display", "table");
-	console.log("display on");
-}
+function toggleonQ () { //turn on questions
+	$(".question").css("display", "table");
+	console.log("display on");}
+
+function toggleonA () { //turn on answers
+	$(".answer").css("display", "table");}
+
+function toggleoffQ () {
+	$(".question").css("display", "none");}
+
+function toggleoffA () {
+	$(".answer").css("display", "none");}
 
 function toggleoffQandA () {
-	$("#question").css("display", "none");
-	$("#answer").css("display", "none");
-	console.log("display off");
-}
+	$(".question").css("display", "none");
+	$(".answer").css("display", "none");}
 
 function settimeInterval (item) {
 
 }
 
 function setupDisplay () {
-	$('.question').append('<h2 id="question">test</h2>');
-	$('#answer').append('<button id="ans1" class="btn text-center answers" value="1">test</button><br>');
-	$('#answer').append('<button id="ans2" class="btn text-center answers" value="2">test</button><br>');
-	$('#answer').append('<button id="ans3" class="btn text-center answers" value="3">test</button><br>');
-	$('#answer').append('<button id="ans4" class="btn text-center answers" value="4">test</button>');
+	
 	console.log("buttons set");
-	//$("#question").append("")
 }
+
 function directions() {
-	$(".question").text("You have 20 seconds to answer each question on Grammy winner trivia.<br>Click anywhere for to begin.<br>Good Luck!");
+	$("#question").html("<h2>1980's Grammy winner trivia</h2><span id='dir'>You have 20 seconds<br>to answer each question.<br>Click anywhere to begin.</span><br><h3>GOOD LUCK !<h3>");
 }
 function pickQuestion() {
 	console.log("pick question");
 }
 
 
-$(document).ready(initialize());
-	setupDisplay();
+$(document).ready(function () {
+	initialize();
+	//setupDisplay();
 	console.log("ready");
 directions();
 $(document).on("click", function () {
-	for (var i=0; i < 9; ++i) {
-		pickQuestion();
-	}
-
+	//for (var i=0; i < 9; ++i) {
+	//	pickQuestion();
+	//}
+	toggleonA();
+});
 });
 
 

@@ -9,6 +9,20 @@ h1 {
 	font-weight: 600;
 	padding: 10px;
 }
+h2, h3 {
+	font-family: 'Rock Salt', cursive;
+	letter-spacing: 3px;
+}
+h2 {
+	color: #002699;
+	font-size: 40px;
+}
+h3 {
+	color: #00cc00;
+}
+#dir {
+	color: #002db3;
+}
 #timer {
 	display: inline;
 	height: 25px;
@@ -19,6 +33,7 @@ h1 {
 	background-image: url("../images/gamebg.jpg");
 	min-height: 300px;
 	border-radius: 25px;
+	padding-bottom: 20px;
 }
 
 footer {
@@ -35,11 +50,12 @@ footer {
 	font-family: 'Mukta Vaani', sans-serif;
 	font-weight: 600;
 	display: table;
-	width: 500px;
+	width: 525px;
 	height: 120px;
 	margin: 10px auto;
+	margin-bottom: 20px;
 	background-color: #fff2e6;
-	color: blue;
+	color: #002699;
 	font-size: 30px;
 	line-height: 1.2;
 	white-space: normal;
@@ -50,11 +66,11 @@ footer {
 .btn {
 	font-family: 'Mada', sans-serif;
 	display: table;
-	width: 500px;
+	width: 525px;
 	max-height: 80px;
 	margin: 5px auto;
 	background-color: #ffffcc;
-	color: blue;
+	color: #002db3;
 	font-size: 20px;
 	line-height: 1.1;
 	white-space: normal;
