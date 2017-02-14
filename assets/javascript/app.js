@@ -240,6 +240,12 @@ function directions() {
 function pickQuestion() {
 	console.log("pick question");
 }
+function runGame() {
+	initialize();
+	toggleonA();
+	
+}
+
 
 
 $(document).ready(function () {
@@ -248,11 +254,10 @@ $(document).ready(function () {
 	console.log("ready");
 directions();
 $(document).on("click", function () {
-	//for (var i=0; i < 9; ++i) {
-	//	pickQuestion();
-	//}
-	toggleonA();
+	runGame();
+	$(document).prop('onclick',null).off('click');
 });
+
 });
 
 
