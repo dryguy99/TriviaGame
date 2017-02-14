@@ -196,6 +196,11 @@ var currentQ = "";
 var qtimeLimit = 15000;
 var qanswerTime = 4000;
 var corrAnswer = 0;
+var playerA = 0;
+var isRight = false;
+var Z = 0; // current question number
+var cQuestion = [];
+var numArray = [];
 
 
 function initialize () {
@@ -203,6 +208,8 @@ function initialize () {
 	corrAnswer = 0;
 	qtimeLimit = 15000;
 	qanswerTime = 4000;
+	numArray = [];
+	cQuestion = [];
 	toggleonQ();
 	toggleoffA();
 	console.log("initialize");
@@ -228,6 +235,13 @@ function toggleoffQandA () {
 function settimeInterval (item) {
 
 }
+function displayTimer () {
+
+}
+
+function checkAnswer (answ) {
+ //if (ans === )
+}
 
 function setupDisplay () {
 	
@@ -237,13 +251,42 @@ function setupDisplay () {
 function directions() {
 	$("#question").html("<h2>1980's Grammy winner trivia</h2><span id='dir'>You have 20 seconds<br>to answer each question.<br>Click anywhere to begin.</span><br><h3>GOOD LUCK !<h3>");
 }
-function pickQuestion() {
+function pickQuestions() {
 	console.log("pick question");
+	var i = 0;
+	do {
+		var r = Math.floor((Math.random() * 100) + 1);
+
+		if (r >= 1 && r <=21 && numArray.indexOf(r) === -1) {
+			numArray.push(r);
+			cQuestion.push("qeighty" + r);
+			console.log(cQuestion);
+			i++;	
+		}
+	}
+	while (i < 8);
 }
+
 function runGame() {
 	initialize();
+	pickQuestions();
+	settimeInterval();
+	displayTimer();
 	toggleonA();
-	
+	$("#ans1").on("click", function() {
+		playerA = 1;
+		console.log(playerA + " is the answer")
+		checkAnswer(playerA);
+	});
+	$("#ans2").on("click", function () {
+		playerA = 2;
+	});
+	$("#ans3").on("click", function () {
+		playerA = 3;
+	});
+	$("#ans4").on("click", function () {
+		playerA = 4;
+	})
 }
 
 
