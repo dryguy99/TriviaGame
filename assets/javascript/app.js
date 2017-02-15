@@ -309,23 +309,23 @@ function checkAnswer (answ) {
 	switch (corrAnswer) {
  			case 1:
  				toggleonans1only();
- 				$("#ans1").css("display", "table");
+ 				//$("#ans1").css("display", "table");
  				break;
  			case 2:
  				toggleonans2only();
- 				$("#ans2").css("display", "table");
+ 				//$("#ans2").css("display", "table");
  				break;
  			case 3:
  				toggleonans3only();
- 				$("#ans1").css("display", "table");
+ 				//$("#ans3").css("display", "table");
  				break;
  			case 4:
  				toggleonans4only();
- 				$("#ans1").css("display", "table");
+ 				//$("#ans4").css("display", "table");
  				break;
  		}
- 	toggleonansreset();
- 	setTimeout (displayQuestion(), 4000);
+ 	console.log("CheckAnswer");
+ 	setTimeout(displayQuestion, 3500);
 }
 
 function setupDisplay () {
@@ -356,7 +356,9 @@ function pickQuestions() {
 }
 
 function displayQuestion () {
+
 	if (qplayed < 7){
+		toggleonansreset();
 		toggleonA();
 		qplayed++; //need to update before picking question
 		console.log("display Question Function, qplayed = " + qplayed);
@@ -438,24 +440,24 @@ function runGame() {
 				console.log(playerA + " is the answer");
 				checkAnswer(playerA);
 			});
-
-	//rungameOver ();
 }
 
 
 
 $(document).ready(function () {
-	resetGame();
 	//setupDisplay();
 	console.log("ready");
 	directions();
+	runGame();
 
 	$("#dir").click(function () {
 		$("#dir").click(function(event){
     	event.stopPropagation();
 		});
-		runGame();
-		setTimeout (displayQuestion(), 4000);
+		console.log("mainprogram");
+		resetGame();
+		
+
 	});
 
 });
