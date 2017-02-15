@@ -2,7 +2,7 @@
 
 //Global Variables
 
-var qeighty1 = {
+var eighty1 = {
 		question: "Which song won the Grammy for record of the year in 1989?",
 		ans1: "Wind Beneath My Wings",
 		ans2: "Don't Worry, Be Happy",
@@ -11,7 +11,7 @@ var qeighty1 = {
 		correctAn: 1,
 		image: ""
 };
-var qeighty2 = {
+var eighty2 = {
 		question: "In 1989, who win the Grammy for Best Comedy Recording?",
 		ans1: "Whoopi Goldberg - Fontaine: Why Am I Straight?",
 		ans2: "Jonathan Winters - Jonathan Winters Finally Captured",
@@ -20,7 +20,7 @@ var qeighty2 = {
 		correctAn: 4,
 		image: ""
 };
-var qeighty3 = {
+var eighty3 = {
 		question: "Who won the Grammy for Album of the Year in 1980?",
 		ans1: "Donna Summer - Bad Girls Lyrics",
 		ans2: "Billy Joel - 52nd Street",
@@ -29,8 +29,8 @@ var qeighty3 = {
 		correctAn: 2,
 		image: ""
 };
-var qeighty4 = {
-		question: "Who won th Grammy for Best Rock Vocal Group in 1980?",
+var eighty4 = {
+		question: "Who won the Grammy for Best Rock Vocal Group in 1980?",
 		ans1: "The Blues Brothers - Briefcase Full of Blues",
 		ans2: "Styx - Cornerstone",
 		ans3: "The Eagles - Heartache Tonight",
@@ -38,7 +38,7 @@ var qeighty4 = {
 		correctAn: 3,
 		image: ""
 };
-var qeighty5 = {
+var eighty5 = {
 		question: "In 1986, which movie won the Grammy for Best Album or Original Score?",
 		ans1: "St. Elmo's Fire",
 		ans2: "Back to the Future",
@@ -47,7 +47,7 @@ var qeighty5 = {
 		correctAn: 4,
 		image: ""
 };
-var qeighty6 = {
+var eighty6 = {
 		question: "In 1986, who won the Grammy for Best Pop Instrumental Performance?",
 		ans1: "Jan Hammer - Miami Vice Theme",
 		ans2: "Harold Faitermeyer - Axel F",
@@ -56,7 +56,7 @@ var qeighty6 = {
 		correctAn: 1,
 		image: ""
 };
-var qeighty7 = {
+var eighty7 = {
 		question: "Who won the 1986 Grammy for Song of the year?",
 		ans1: "Mark Koopfler, Sting - Money for Nothing",
 		ans2: "Don Henley, Mike Campbell - The Boys of Summer",
@@ -65,7 +65,7 @@ var qeighty7 = {
 		correctAn: 3,
 		image: ""
 };
-var qeighty8 = {
+var eighty8 = {
 		question: "Who won the 1982 Grammy for Best Rock Vocal Group?",
 		ans1: "Foreigner",
 		ans2: "The Police",
@@ -74,7 +74,7 @@ var qeighty8 = {
 		correctAn: 2,
 		image: ""
 };
-var qeighty9 = {
+var eighty9 = {
 		question: "In 1982, who won the Grammy for Best Pop Vocal Group?",
 		ans1: "Diana Ross, Lionel Richie - Endless Love",
 		ans2: "Steely Dan - Gaucho Lyrics",
@@ -83,8 +83,8 @@ var qeighty9 = {
 		correctAn: 1,
 		image: ""
 };
-var qeighty10 = {
-		question: "In 1985, which movie won the Best Album Of Original Score Written For A Motion Picture Grammy?",
+var eighty10 = {
+		question: "In 1985, which movie won the Best Album Or Original Score Written For A Motion Picture Grammy?",
 		ans1: "Against All Odds",
 		ans2: "Purple Rain",
 		ans3: "Ghostbusters",
@@ -92,7 +92,7 @@ var qeighty10 = {
 		correctAn: 2,
 		image: ""
 };
-var qeighty11 = {
+var eighty11 = {
 		question: "Who won the 1985 Best New Artist Grammy?",
 		ans1: "Frankie Goes To Hollywood",
 		ans2: "The Judds",
@@ -101,7 +101,7 @@ var qeighty11 = {
 		correctAn: 3,
 		image: ""
 };
-var qeighty12 = {
+var eighty12 = {
 		question: "Who won the 1988 Album of the Year Grammy?",
 		ans1: "Whitney Houston - Whitney",
 		ans2: "Michael Jackson - Bad",
@@ -110,7 +110,7 @@ var qeighty12 = {
 		correctAn: 4,
 		image: ""
 };
-var qeighty13 = {
+var eighty13 = {
 		question: "Who won the Best Rock Vocal Performance in 1988?",
 		ans1: "Tina Turner - Better Be Good To Me",
 		ans2: "Bob Seger - Shakedown",
@@ -119,7 +119,7 @@ var qeighty13 = {
 		correctAn: 4,
 		image: ""
 };
-var qeighty14 = {
+var eighty14 = {
 		question: "Who won the 1981 Album of the Year Grammy?",
 		ans1: "Billy Joel - Glass Houses",
 		ans2: "Frank Sinatra - Trilogy: Past, Present, Future",
@@ -128,7 +128,7 @@ var qeighty14 = {
 		correctAn: 3,
 		image: ""
 };
-var qeighty15 = {
+var eighty15 = {
 		question: "In 1981, the Grammy for Best Pop Female Vocalist was won by:",
 		ans1: "Olivia Newton-John - Magic",
 		ans2: "Bette Midler - The Rose",
@@ -137,7 +137,7 @@ var qeighty15 = {
 		correctAn: 2,
 		image: ""
 };
-var qeighty16 = {
+var eighty16 = {
 		question: "The 1983 Grammy for Best Rock Male Vocalist was:",
 		ans1: "John Cougar - Hurts So Good",
 		ans2: "Don Henley - Dirty Laundry",
@@ -146,7 +146,7 @@ var qeighty16 = {
 		correctAn: 1,
 		image: ""
 };
-var qeighty17 = {
+var eighty17 = {
 		question: "The 1983 Grammy winner for Record of the Year winner was:",
 		ans1: "Paul McCartney, Stevie Wonder - Ebony and Ivory",
 		ans2: "Toto - Rosanna",
@@ -155,7 +155,7 @@ var qeighty17 = {
 		correctAn: 2,
 		image: ""
 };
-var qeighty18 = {
+var eighty18 = {
 		question: "The 1982 Grammy winner for Best New Artist was:",
 		ans1: "The Go-Go's",
 		ans2: "Luther Vandross",
@@ -164,7 +164,7 @@ var qeighty18 = {
 		correctAn: 3,
 		image: ""
 };
-var qeighty19 = {
+var eighty19 = {
 		question: "The 1982 winner for the Best Rock Male Vocalist Grammy was:",
 		ans1: "Rick James - Superfreak",
 		ans2: "Bruce Springsteen - The River",
@@ -173,7 +173,7 @@ var qeighty19 = {
 		correctAn: 4,
 		image: ""
 };
-var qeighty20 = {
+var eighty20 = {
 		question: "The Record of the Year Grammy winner for 1987 was:",
 		ans1: "Peter Gabriel - Sledgehammer",
 		ans2: "Steve Winwood - Higher Love",
@@ -182,7 +182,7 @@ var qeighty20 = {
 		correctAn: 2,
 		image: ""
 };
-var qeighty21 = {
+var eighty21 = {
 		question: "In 1987, the Song of the Year Grammy winner was:",
 		ans1: "Paul Simon - Graceland",
 		ans2: "Robert Palmer - Addicted To Love",
@@ -191,8 +191,10 @@ var qeighty21 = {
 		correctAn: 4,
 		image: ""
 };
-
-var currentQ = "";
+var CAnswerArr = [eighty1, eighty2, eighty3, eighty4, eighty5, eighty6, eighty7, eighty8, eighty9, eighty10, eighty11, eighty12, eighty13, eighty14, eighty15, eighty16, eighty17, eighty18, eighty19, eighty20, eighty21];
+//var ansArray = [ans1, ans2, ans3, ans4];
+var qindex = -1;
+var currentQ = -1;
 var qtimeLimit = 15000;
 var qanswerTime = 4000;
 var corrAnswer = 0;
@@ -200,38 +202,92 @@ var playerA = 0;
 var isRight = false;
 var Z = 0; // current question number
 var cQuestion = [];
+var corrAnswerArr = [];
 var numArray = [];
+var wins = 0;
+var losses = 0;
+var correctAnsNum = 0;
+var inncorrectAns = 0;
+var percentR = 0;
+var endsaying = "";
+var qplayed = -1;
+var showAnswer;
 
+
+function toggleonQ () { //turn on questions
+	$("#question").css("display", "table");
+	console.log("display on");}
+
+function toggleonA () { //turn on answers
+	$("#answer").css("display", "table");}
+
+function toggleoffQ () {
+	$("#question").css("display", "none");}
+
+function toggleoffA () {
+	$("#answer").css("display", "none");}
+
+function toggleoffQandA () {
+	$("#question").css("display", "none");
+	$("#answer").css("display", "none");}
+
+function toggleonans1only() {
+	toggleonA();
+	$("#ans1").css("display", "table");
+	$("#ans2").css("display", "none");
+	$("#ans3").css("display", "none");
+	$("#ans4").css("display", "none");
+}
+function toggleonans2only () {
+	toggleonA();
+	$("#ans1").css("display", "none");
+	$("#ans2").css("display", "table");
+	$("#ans3").css("display", "none");
+	$("#ans4").css("display", "none");
+}
+function toggleonans3only () {
+	toggleonA();
+	$("#ans1").css("display", "none");
+	$("#ans2").css("display", "none");
+	$("#ans3").css("display", "table");
+	$("#ans4").css("display", "none");
+}
+function toggleonans4only () {
+	toggleonA();
+	$("#ans1").css("display", "none");
+	$("#ans2").css("display", "none");
+	$("#ans3").css("display", "none");
+	$("#ans4").css("display", "table");
+}
+function toggleonansreset () {
+	toggleoffA();
+	$("#ans1").css("display", "table");
+	$("#ans1").html("");
+	$("#ans2").css("display", "table");
+	$("#ans2").html("");
+	$("#ans3").css("display", "table");
+	$("#ans3").html("");
+	$("#ans4").css("display", "table");
+	$("#ans4").html("");
+}
 
 function initialize () {
-	currentQ = "";
+	qindex = -1;
+	currentQ = -1;
 	corrAnswer = 0;
 	qtimeLimit = 15000;
 	qanswerTime = 4000;
 	numArray = [];
 	cQuestion = [];
+	correctAnsNum = 0;
+	inncorrectAns = 0;
+	percentR = 0;
+	endsaying = "";
+	qplayed = -1;
 	toggleonQ();
 	toggleoffA();
 	console.log("initialize");
 }
-
-function toggleonQ () { //turn on questions
-	$(".question").css("display", "table");
-	console.log("display on");}
-
-function toggleonA () { //turn on answers
-	$(".answer").css("display", "table");}
-
-function toggleoffQ () {
-	$(".question").css("display", "none");}
-
-function toggleoffA () {
-	$(".answer").css("display", "none");}
-
-function toggleoffQandA () {
-	$(".question").css("display", "none");
-	$(".answer").css("display", "none");}
-
 function settimeInterval (item) {
 
 }
@@ -240,7 +296,36 @@ function displayTimer () {
 }
 
 function checkAnswer (answ) {
- //if (ans === )
+	toggleoffA();
+ 	if (answ === corrAnswer) {
+ 		$("#question").html("<h2>CORRECT!</h2><br>");
+ 		correctAnsNum++;
+	}	
+	else { 
+		$("#question").html("<h2>Sorry that is Incorrect.<br>The Correct Answer is:</h2>");
+		inncorrectAns++;
+	}
+
+	switch (corrAnswer) {
+ 			case 1:
+ 				toggleonans1only();
+ 				$("#ans1").css("display", "table");
+ 				break;
+ 			case 2:
+ 				toggleonans2only();
+ 				$("#ans2").css("display", "table");
+ 				break;
+ 			case 3:
+ 				toggleonans3only();
+ 				$("#ans1").css("display", "table");
+ 				break;
+ 			case 4:
+ 				toggleonans4only();
+ 				$("#ans1").css("display", "table");
+ 				break;
+ 		}
+ 	toggleonansreset();
+ 	setTimeout (displayQuestion(), 4000);
 }
 
 function setupDisplay () {
@@ -249,57 +334,129 @@ function setupDisplay () {
 }
 
 function directions() {
-	$("#question").html("<h2>1980's Grammy winner trivia</h2><span id='dir'>You have 20 seconds<br>to answer each question.<br>Click anywhere to begin.</span><br><h3>GOOD LUCK !<h3>");
+	toggleoffA();
+	$("#question").html("<h2>1980's Grammy winner trivia</h2><span id='dir'>You have 20 seconds<br>to answer each question.<br>Click HERE to begin.</span><br><h3>GOOD LUCK !<h3>");
 }
+
 function pickQuestions() {
 	console.log("pick question");
 	var i = 0;
 	do {
-		var r = Math.floor((Math.random() * 100) + 1);
+		var r = Math.floor(Math.random() * 100);
 
-		if (r >= 1 && r <=21 && numArray.indexOf(r) === -1) {
+		if (r >= 0 && r <=20 && numArray.indexOf(r) === -1) {
 			numArray.push(r);
-			cQuestion.push("qeighty" + r);
-			console.log(cQuestion);
+			console.log(numArray);
 			i++;	
 		}
 	}
 	while (i < 8);
+	console.log("first Question is: " + CAnswerArr[numArray[(qplayed+1)]].question + " qplayed: " + (qplayed+1));
+
 }
 
-function runGame() {
+function displayQuestion () {
+	if (qplayed < 7){
+		toggleonA();
+		qplayed++; //need to update before picking question
+		console.log("display Question Function, qplayed = " + qplayed);
+		currentQ = CAnswerArr[numArray[qplayed]].question;
+		console.log("Made it to display Question " + currentQ);
+		$("#question").html(currentQ);
+		corrAnswer = CAnswerArr[numArray[qplayed]].correctAn;
+		console.log("correct answer number is " + corrAnswer);
+		$("#ans1").html(CAnswerArr[numArray[qplayed]].ans1);
+		$("#ans2").html(CAnswerArr[numArray[qplayed]].ans2);
+		$("#ans3").html(CAnswerArr[numArray[qplayed]].ans3);
+		$("#ans4").html(CAnswerArr[numArray[qplayed]].ans4);
+	}
+	else { 
+		toggleoffA();
+		rungameOver();}
+
+}
+
+function rungameOver () {
+	toggleoffA();
+	toggleonans1only();
+	$("#reset").css("display", "table");	
+	$("#question").html("<h2>GAME OVER</h2><span id='dir'>Click Reset to play again.</span>");
+		percentR = Math.round(correctAnsNum / 8 * 100);
+		if (percentR > 85) {
+				endsaying = "FABULOUS!<br>You know your 80's trivia!";
+				wins++;}
+			else if (percentR > 61)	{
+				endsaying = "Not bad...<br>Were you alive in the 80's?";
+				wins++;}
+			else { 
+				endsaying = "Better Luck Next Time!";
+				losses++;}
+	$("#ans1").html(('Wins: ') + wins + (' - Losses: ') + losses + ('<br>') + correctAnsNum + (' questions correct out of 8.<br><h3>You got ') + percentR + ('% right.<br>') + endsaying);
+	
+	$("#reset").on("click", function() {
+
+		$("#reset").css("display", "none");
+		$("#reset").off("click");
+		toggleonansreset();
+		toggleoffA();
+		resetGame ();
+	});
+}
+function resetGame() {
 	initialize();
 	pickQuestions();
 	settimeInterval();
+	console.log("time interval");
 	displayTimer();
-	toggleonA();
-	$("#ans1").on("click", function() {
-		playerA = 1;
-		console.log(playerA + " is the answer")
-		checkAnswer(playerA);
-	});
-	$("#ans2").on("click", function () {
-		playerA = 2;
-	});
-	$("#ans3").on("click", function () {
-		playerA = 3;
-	});
-	$("#ans4").on("click", function () {
-		playerA = 4;
-	})
+	console.log("display timer");
+	displayQuestion();
+}
+
+function startcheckAnswer () {
+	showAnswer = setInterval(checkAnswer, 4000);
+	console.log("interval set");
+}
+function runGame() {
+
+			$("#ans1").on("click", function() {
+				playerA = 1;
+				console.log(playerA + " is the answer");
+				checkAnswer(playerA);
+			});
+			$("#ans2").on("click", function () {
+				playerA = 2;
+				console.log(playerA + " is the answer");
+				checkAnswer(playerA);
+			});
+			$("#ans3").on("click", function () {
+				playerA = 3;
+				console.log(playerA + " is the answer");
+				checkAnswer(playerA);
+			});
+			$("#ans4").on("click", function () {
+				playerA = 4;
+				console.log(playerA + " is the answer");
+				checkAnswer(playerA);
+			});
+
+	//rungameOver ();
 }
 
 
 
 $(document).ready(function () {
-	initialize();
+	resetGame();
 	//setupDisplay();
 	console.log("ready");
-directions();
-$(document).on("click", function () {
-	runGame();
-	$(document).prop('onclick',null).off('click');
-});
+	directions();
+
+	$("#dir").click(function () {
+		$("#dir").click(function(event){
+    	event.stopPropagation();
+		});
+		runGame();
+		setTimeout (displayQuestion(), 4000);
+	});
 
 });
 

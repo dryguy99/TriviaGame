@@ -19,6 +19,7 @@ h2 {
 }
 h3 {
 	color: #00cc00;
+	line-height: 1.5;
 }
 #dir {
 	color: #002db3;
@@ -67,7 +68,7 @@ footer {
 	font-family: 'Mada', sans-serif;
 	display: table;
 	width: 525px;
-	max-height: 80px;
+	min-height: 60px;
 	margin: 5px auto;
 	background-color: #ffffcc;
 	color: #002db3;
@@ -78,10 +79,28 @@ footer {
 	border-radius: 25px;
 
 }
+.btn:focus {
+	outline: none;
+}
 .btn:hover {
 	background-color: #ffdd99;
 	border-color: #cc8800;
+}
 
+#reset{
+	display: none;
+}
+#ans1 {
+	display: table;
+}
+#ans2 {
+	display: table;
+}
+#ans3 {
+	display: table;
+}
+#ans4 {
+	display: table;
 }
 
 /*#ans1 {
