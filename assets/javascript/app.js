@@ -193,6 +193,7 @@ var eighty21 = {
 };
 var CAnswerArr = [eighty1, eighty2, eighty3, eighty4, eighty5, eighty6, eighty7, eighty8, eighty9, eighty10, eighty11, eighty12, eighty13, eighty14, eighty15, eighty16, eighty17, eighty18, eighty19, eighty20, eighty21];
 //var ansArray = [ans1, ans2, ans3, ans4];
+var gamestart = false;
 var qindex = -1;
 var currentQ = -1;
 var qtimeLimit = 15000;
@@ -212,6 +213,8 @@ var percentR = 0;
 var endsaying = "";
 var qplayed = -1;
 var showAnswer;
+var DisplayTime;
+var displaytimeInterval;
 
 
 function toggleonQ () { //turn on questions
@@ -270,12 +273,20 @@ function toggleonansreset () {
 	$("#ans4").css("display", "table");
 	$("#ans4").html("");
 }
+function toggleonCorrect () {
+	toggleonA();
+	$("#correct").css("display", "inline");
+	$("#ans1").css("display", "none");
+	$("#ans2").css("display", "none");
+	$("#ans3").css("display", "none");
+	$("#ans4").css("display", "none");
+}
 
 function initialize () {
 	qindex = -1;
 	currentQ = -1;
 	corrAnswer = 0;
-	qtimeLimit = 15000;
+	qtimeLimit = 20000;
 	qanswerTime = 4000;
 	numArray = [];
 	cQuestion = [];
@@ -285,46 +296,65 @@ function initialize () {
 	endsaying = "";
 	qplayed = -1;
 	toggleonQ();
+	$("#correct").css("display", "none");
 	toggleoffA();
-	console.log("initialize");
+	console.log("initialize");	
 }
-function settimeInterval (item) {
 
-}
-function displayTimer () {
+var count=21;
 
+var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+
+function timer()
+{
+  count--;
+  if (count <= 0 && gamestart === true)
+  {
+     clearInterval(counter);
+     $("#time").css("display", "none");
+     playerA = 0;
+     checkAnswer(playerA);
+     return;
+  }
+  $("#time").html(count);
 }
 
 function checkAnswer (answ) {
+	$("#time").css("display", "none");
 	toggleoffA();
  	if (answ === corrAnswer) {
- 		$("#question").html("<h2>CORRECT!</h2><br>");
+ 		$("#question").html("<h2 id='green'>CORRECT!</h2>");
  		correctAnsNum++;
 	}	
 	else { 
-		$("#question").html("<h2>Sorry that is Incorrect.<br>The Correct Answer is:</h2>");
+		$("#question").html("<h2>Sorry that is Incorrect.</h2><h2 id='green'>The Correct Answer is:</h2>");
 		inncorrectAns++;
 	}
-
+	toggleonCorrect();
 	switch (corrAnswer) {
  			case 1:
- 				toggleonans1only();
+ 				$("#correct").html(CAnswerArr[numArray[qplayed]].ans1);
+ 				//toggleonans1only();
  				//$("#ans1").css("display", "table");
  				break;
  			case 2:
- 				toggleonans2only();
+ 				$("#correct").html(CAnswerArr[numArray[qplayed]].ans2);
+ 				//toggleonans2only();
  				//$("#ans2").css("display", "table");
  				break;
  			case 3:
- 				toggleonans3only();
+ 				$("#correct").html(CAnswerArr[numArray[qplayed]].ans3);
+ 				//toggleonans3only();
  				//$("#ans3").css("display", "table");
  				break;
  			case 4:
- 				toggleonans4only();
+ 				$("#correct").html(CAnswerArr[numArray[qplayed]].ans4);
+ 				//toggleonans4only();
  				//$("#ans4").css("display", "table");
  				break;
  		}
  	console.log("CheckAnswer");
+ 	count=24;
  	setTimeout(displayQuestion, 3500);
 }
 
@@ -356,7 +386,9 @@ function pickQuestions() {
 }
 
 function displayQuestion () {
-
+	$("#correct").css("display", "none");
+	counter;
+	$("#time").css("display", "inline");
 	if (qplayed < 7){
 		toggleonansreset();
 		toggleonA();
@@ -379,8 +411,9 @@ function displayQuestion () {
 }
 
 function rungameOver () {
+	clearInterval(counter);
+	$("#time").css("display", "none");
 	toggleoffA();
-	toggleonans1only();
 	$("#reset").css("display", "table");	
 	$("#question").html("<h2>GAME OVER</h2><span id='dir'>Click Reset to play again.</span>");
 		percentR = Math.round(correctAnsNum / 8 * 100);
@@ -393,7 +426,8 @@ function rungameOver () {
 			else { 
 				endsaying = "Better Luck Next Time!";
 				losses++;}
-	$("#ans1").html(('Wins: ') + wins + (' - Losses: ') + losses + ('<br>') + correctAnsNum + (' questions correct out of 8.<br><h3>You got ') + percentR + ('% right.<br>') + endsaying);
+	toggleonCorrect();
+	$("#correct").html(('Wins: ') + wins + (' - Losses: ') + losses + ('<br>') + correctAnsNum + (' questions correct out of 8.<br><h3>You got ') + percentR + ('% right.<br>') + endsaying);
 	
 	$("#reset").on("click", function() {
 
@@ -407,10 +441,6 @@ function rungameOver () {
 function resetGame() {
 	initialize();
 	pickQuestions();
-	settimeInterval();
-	console.log("time interval");
-	displayTimer();
-	console.log("display timer");
 	displayQuestion();
 }
 
@@ -449,11 +479,13 @@ $(document).ready(function () {
 	console.log("ready");
 	directions();
 	runGame();
+	$("#time").css("display", "none");
 
 	$("#dir").click(function () {
 		$("#dir").click(function(event){
     	event.stopPropagation();
 		});
+		gamestart = true;
 		console.log("mainprogram");
 		resetGame();
 		
