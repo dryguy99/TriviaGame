@@ -9,7 +9,7 @@ var eighty1 = {
 		ans3: "Giving You The Best That I Got",
 		ans4: "Fast Car",
 		correctAn: 1,
-		image: ""
+		image: "https://media.giphy.com/media/Z6aNFBevc1e8/giphy.gif"
 };
 var eighty2 = {
 		question: "In 1989, who win the Grammy for Best Comedy Recording?",
@@ -18,7 +18,7 @@ var eighty2 = {
 		ans3: "George Carlin - What Am I Doing in New Jersey?",
 		ans4: "Robin Williams - Good Morning, Vietnam",
 		correctAn: 4,
-		image: ""
+		image: "http://media4.giphy.com/media/BYG86QlGgaHvy/200.gif"
 };
 var eighty3 = {
 		question: "Who won the Grammy for Album of the Year in 1980?",
@@ -27,7 +27,7 @@ var eighty3 = {
 		ans3: "The Doobie Brothers - Minute By Minute",
 		ans4: "Kenny Rogers - The Gambler",
 		correctAn: 2,
-		image: ""
+		image: "http://media3.giphy.com/media/kwedy7YBOR9TO/200.gif"
 };
 var eighty4 = {
 		question: "Who won the Grammy for Best Rock Vocal Group in 1980?",
@@ -36,7 +36,7 @@ var eighty4 = {
 		ans3: "The Eagles - Heartache Tonight",
 		ans4: "Dire Straits - Sultans Of Swing",
 		correctAn: 3,
-		image: ""
+		image: " http://media2.giphy.com/media/G931aAI3D1yLe/200.gif"
 };
 var eighty5 = {
 		question: "In 1986, which movie won the Grammy for Best Album or Original Score?",
@@ -45,7 +45,7 @@ var eighty5 = {
 		ans3: "Witness",
 		ans4: "Beverly Hills Cop",
 		correctAn: 4,
-		image: ""
+		image: " http://media0.giphy.com/media/3oEjI5VtIhHvK37WYo/200.gif"
 };
 var eighty6 = {
 		question: "In 1986, who won the Grammy for Best Pop Instrumental Performance?",
@@ -54,7 +54,7 @@ var eighty6 = {
 		ans3: "David Foster - Love Theme from St. Elmo's Fire",
 		ans4: "Spyro Gyra - Shake Down",
 		correctAn: 1,
-		image: ""
+		image: "http://media0.giphy.com/media/bK1B852Fwhk1q/200.gif"
 };
 var eighty7 = {
 		question: "Who won the 1986 Grammy for Song of the year?",
@@ -63,7 +63,7 @@ var eighty7 = {
 		ans3: "Michael Jackson, Lionel Richie - We Are the World",
 		ans4: "Mick Jones - I Want to Know What Love Is",
 		correctAn: 3,
-		image: ""
+		image: "https://media1.giphy.com/media/SzXbYeimuETjG/200.gif"
 };
 var eighty8 = {
 		question: "Who won the 1982 Grammy for Best Rock Vocal Group?",
@@ -72,7 +72,7 @@ var eighty8 = {
 		ans3: "REO Speedwagon",
 		ans4: "Stevie Nicks with Tom Petty and the Heartbreakers",
 		correctAn: 2,
-		image: ""
+		image: "http://media2.giphy.com/media/VnotNtf05tubS/200.gif"
 };
 var eighty9 = {
 		question: "In 1982, who won the Grammy for Best Pop Vocal Group?",
@@ -81,7 +81,7 @@ var eighty9 = {
 		ans3: "Daryl Hall, John Oates - Private Eyes",
 		ans4: "Pointer Sisters - Slow Hand",
 		correctAn: 1,
-		image: ""
+		image: "http://media4.giphy.com/media/7KHwGg1ETDf9u/200.gif"
 };
 var eighty10 = {
 		question: "In 1985, which movie won the Best Album Or Original Score Written For A Motion Picture Grammy?",
@@ -90,7 +90,7 @@ var eighty10 = {
 		ans3: "Ghostbusters",
 		ans4: "Footloose",
 		correctAn: 2,
-		image: ""
+		image: "https://media1.giphy.com/media/3o6ozytWsop0roTP5m/200.gif"
 };
 var eighty11 = {
 		question: "Who won the 1985 Best New Artist Grammy?",
@@ -99,7 +99,7 @@ var eighty11 = {
 		ans3: "Cyndi Lauper",
 		ans4: "Corey Hart",
 		correctAn: 3,
-		image: ""
+		image: "http://media1.giphy.com/media/g4rMY2BEDF42c/200.gif"
 };
 var eighty12 = {
 		question: "Who won the 1988 Album of the Year Grammy?",
@@ -108,7 +108,7 @@ var eighty12 = {
 		ans3: "Prince - Sing O' the Times",
 		ans4: "U2 - The Joshua Tree",
 		correctAn: 4,
-		image: ""
+		image: "https://media3.giphy.com/media/5lfCgCmkOCvra/200.gif"
 };
 var eighty13 = {
 		question: "Who won the Best Rock Vocal Performance in 1988?",
@@ -117,7 +117,7 @@ var eighty13 = {
 		ans3: "Joe Cocker - Unchain My Heart",
 		ans4: "Bruce Springsteen - Tunnel Of Love",
 		correctAn: 4,
-		image: ""
+		image: "http://media3.giphy.com/media/l41lPvHniDcGbVSRG/200.gif"
 };
 var eighty14 = {
 		question: "Who won the 1981 Album of the Year Grammy?",
@@ -126,7 +126,7 @@ var eighty14 = {
 		ans3: "Christopher Cross - Christopher Cross",
 		ans4: "Pink Floyd - The Wall",
 		correctAn: 3,
-		image: ""
+		image: "http://media4.giphy.com/media/mBSFefesp3o2I/200.gif"
 };
 var eighty15 = {
 		question: "In 1981, the Grammy for Best Pop Female Vocalist was won by:",
@@ -135,7 +135,7 @@ var eighty15 = {
 		ans3: "Donna Summer - On The Radio",
 		ans4: "Barbra Streisand - Woman in Love",
 		correctAn: 2,
-		image: ""
+		image: "http://media2.giphy.com/media/WSRfKHhbKSxgc/200.gif"
 };
 var eighty16 = {
 		question: "The 1983 Grammy for Best Rock Male Vocalist was:",
@@ -144,7 +144,7 @@ var eighty16 = {
 		ans3: "Rod Stewart - Tonight I'm Yours",
 		ans4: "Peter Gabriel - Shock The Monkey",
 		correctAn: 1,
-		image: ""
+		image: "http://media4.giphy.com/media/l0MYv9yviadoEu4BG/200.gif"
 };
 var eighty17 = {
 		question: "The 1983 Grammy winner for Record of the Year winner was:",
@@ -153,7 +153,7 @@ var eighty17 = {
 		ans3: "Willie Nelson - Always On My Mind",
 		ans4: "Joe Jackson - Steppin' Out",
 		correctAn: 2,
-		image: ""
+		image: "http://media2.giphy.com/media/RR0LUyrX9DP68/200.gif"
 };
 var eighty18 = {
 		question: "The 1982 Grammy winner for Best New Artist was:",
@@ -162,7 +162,7 @@ var eighty18 = {
 		ans3: "Sheena Easton",
 		ans4: "Adam And The Ants",
 		correctAn: 3,
-		image: ""
+		image: "http://media2.giphy.com/media/J8bVTWgCYWXIY/200.gif"
 };
 var eighty19 = {
 		question: "The 1982 winner for the Best Rock Male Vocalist Grammy was:",
@@ -171,7 +171,7 @@ var eighty19 = {
 		ans3: "Rod Stewart - Young Turks",
 		ans4: "Rick Springfield - Jesse's Girl",
 		correctAn: 4,
-		image: ""
+		image: "http://media3.giphy.com/media/Zq0v0PnDKkl4k/200.gif"
 };
 var eighty20 = {
 		question: "The Record of the Year Grammy winner for 1987 was:",
@@ -180,7 +180,7 @@ var eighty20 = {
 		ans3: "Robert Palmer - Addicted To Love",
 		ans4: "Whitney Houston - Greatest Love Of All",
 		correctAn: 2,
-		image: ""
+		image: "http://media3.giphy.com/media/KxCbwjYF3GB4Q/200.gif"
 };
 var eighty21 = {
 		question: "In 1987, the Song of the Year Grammy winner was:",
@@ -189,9 +189,190 @@ var eighty21 = {
 		ans3: "Steve Winwood, Will Jennings - Higher Love",
 		ans4: "Burt Bacharach, Carole Bayer Sager - That's What Friends Are For",
 		correctAn: 4,
-		image: ""
+		image: "http://media4.giphy.com/media/sfNI4nuJNnPPy/200.gif"
 };
-var CAnswerArr = [eighty1, eighty2, eighty3, eighty4, eighty5, eighty6, eighty7, eighty8, eighty9, eighty10, eighty11, eighty12, eighty13, eighty14, eighty15, eighty16, eighty17, eighty18, eighty19, eighty20, eighty21];
+var eighty22 = {
+		question: "The 1980 Record of the Year Grammy winner was:",
+		ans1: "Barbra Streisand, Neil Diamond - You Don't Bring Me Flowers",
+		ans2: "Gloria Gaynor - I Will Survive",
+		ans3: "The Doobie Brothers - What A Fool Believes",
+		ans4: "Earth Wind & Fire - After The Love Has Gone",
+		correctAn: 3,
+		image: "http://media1.giphy.com/media/AeEmjOYfobOwM/200.gif"
+};
+var eighty23 = {
+		question: "The Best New Artist Grammy winner for 1980 was::",
+		ans1: "Blues Brothers",
+		ans2: "Rickie Lee Jones",
+		ans3: "Dire Straits",
+		ans4: "The Knack",
+		correctAn: 2,
+		image: "http://media4.giphy.com/media/Hx7HQQyITPD2g/200.gif"
+};
+var eighty24 = {
+		question: "In 1981, the Grammy winner for Best Album Or Original Score Written For A Motion Picture was:",
+		ans1: "John Williams - The Empire Strikes Back",
+		ans2: "J.D. Souther, Boz Scaggs, David Foster, Jerry Foster, Bill Rice, Brian Collins, Robby Campbell, Joe Walsh, Bob Morrison, Johnny Wilson, Dan Fogelberg, Bob Seger, Wayland Holyfield, Bob House, Wanda Mallette, Patti Ryan - Urban Cowboy",
+		ans3: "Paul Simon - One Trick Pony",
+		ans4: "Michael Gore, Anthony Evans, Paul McCrane, Dean Pitchford, Lesley Gore, Robert F. Colesberry - Fame",
+		correctAn: 1,
+		image: "http://media1.giphy.com/media/3o7abIn8H8TTzmQrcc/200.gif"
+};
+var eighty25 = {
+		question: "The 1981 Grammy winner for Best Pop Vocal Group was:",
+		ans1: "Barbra Streisand, Barry Gibb - Guilty",
+		ans2: "Bob Seger and the Silver Bullet Band - Against the Wind",
+		ans3: "Pointer Sisters - He's So Shy",
+		ans4: "Kenny Rogers, Kim Carnes - Don't Fall in Love with a Dreamer",
+		correctAn: 1,
+		image: "http://media1.giphy.com/media/V5b67XPRI8meA/200.gif"
+};
+var eighty26 = {
+		question: "In 1982, the Grammy winner for Best Rock Female Vocalist was:",
+		ans1: "Donna Summer - Cold Love",
+		ans2: "Pat Benatar - Fire And Ice",
+		ans3: "Stevie Nicks - Edge Of Seventeen",
+		ans4: "Yoko Ono - Walking on Thin Ice",
+		correctAn: 2,
+		image: "http://media0.giphy.com/media/iFgXeLNjqXvuo/200.gif"
+};
+var eighty27 = {
+		question: "The Grammy winner for Song Of The Year in 1982 was:",
+		ans1: "Dolly Parton - 9 To 5",
+		ans2: "Bill Withers, William Salter, Ralph MacDonald - Just the Two of Us",
+		ans3: "Donna Weiss, Jackie DeShannon - Bette Davis Eyes",
+		ans4: "Peter Allen, Burt Bacharach, Carole Bayer Sager, Christopher Cross - Arthur's Theme",
+		correctAn: 3,
+		image: "http://media3.giphy.com/media/l0MYQTU4sj65O63Ys/200.gif"
+};
+var eighty28 = {
+		question: "The Best Comedy Recording Grammy for 1983 went to:",
+		ans1: "Steve Martin - The Steve Martin Brothers",
+		ans2: "George Carlin - A Place for My Stuff",
+		ans3: "Eddie Murphy - Eddie Murphy",
+		ans4: "Richard Pryor - Live on the Sunset Strip",
+		correctAn: 4,
+		image: "http://media4.giphy.com/media/8E0BKkif6fxJe/200.gif"
+};
+var eighty29 = {
+		question: "The Best Rock Female Vocalist Grammy for 1983 went to:",
+		ans1: "Pat Benatar - Shadows Of The Night Lyrics",
+		ans2: "Linda Ronstadt - Get Closer",
+		ans3: "Bonnie Raitt - Green Light",
+		ans4: "Donna Summer - Protection",
+		correctAn: 1,
+		image: "http://media1.giphy.com/media/qfaOraM9d7gCk/200.gif"
+};
+var eighty30 = {
+		question: "The Best Album Of The Year Grammy for 1984 went to:",
+		ans1: "Billy Joel - An Innocent Man",
+		ans2: "Michael Jackson - Thriller",
+		ans3: "David Bowie - Let's Dance",
+		ans4: "The Police – Sychronicity",
+		correctAn: 2,
+		image: "http://media2.giphy.com/media/4pgUXUloMxiLu/200.gif"
+};
+var eighty31 = {
+		question: "The Grammy for Best Album Or Original Score Written For A Motion Picture winner, in 1984, was:",
+		ans1: "Dave Grusin - Tootsie",
+		ans2: "John Williams - Star Wars: Return of the Jedi",
+		ans3: "Giorgio Moroder, Keith Forsey, Irene Cara, Shandi Sinnamon, Ronald Magness, Douglas Cotler, Richard Gilbert, Michael Boddicker, Jerry Hey, Phil Ramone, Michael Sembello, Kim Carnes, Duane Hitchings, Craig Krampf, Dennis Matkosky - Flashdance",
+		ans4: "Frank Stallone, Bruce Stephen Foster, R. Freeland, V. DiCola, T. Marolda, Joe Bean Esposito, Randy Bishop, Tommy Faragher, Barry Gibb, Maurice Gibb, Robin Gibb - Stayin' Alive",
+		correctAn: 3,
+		image: "http://media1.giphy.com/media/pqBlJrmobXx2E/200.gif"
+};
+var eighty32 = {
+		question: "The Song of the Year Grammy for 1984 went to:",
+		ans1: "Michael Jackson - Beat It",
+		ans2: "Michael Jackson - Billie Jean",
+		ans3: "Lionel Richie - All Night Long",
+		ans4: "Sting - Every Breath You Take",
+		correctAn: 4,
+		image: "http://media4.giphy.com/media/26FL2kSt4v5bjgHKw/200.gif"
+};
+var eighty33 = {
+		question: "The Record of the Year Grammy in 1984 went to:",
+		ans1: "Irene Cara - Flashdance - What A Feeling",
+		ans2: "The Police - Every Breath You Take",
+		ans3: "Lionel Richie - All Night Long",
+		ans4: "Michael Jackson - Beat It",
+		correctAn: 4,
+		image: "http://media4.giphy.com/media/yFL6fCUq6tUVq/200.gif"
+};
+var eighty34 = {
+		question: "In 1985, the Grammy for Song of the Year went to:",
+		ans1: "Cyndi Lauper, Rob Hyman - Time After Time",
+		ans2: "Lionel Richie - Hello",
+		ans3: "Graham Lyle, Terry Britten - What's Love Got to Do With It?",
+		ans4: "Stevie Wonder - I Just Called To Say I Love You",
+		correctAn: 3,
+		image: "http://media1.giphy.com/media/9KNy8QtqQqdqg/200.gif"
+};
+var eighty35 = {
+		question: "In 1985, the Best Rock Vocal Group Grammy winner was:",
+		ans1: "Yes - 90125",
+		ans2: "Prince and the Revolution - Purple Rain",
+		ans3: "Genesis - Genesis",
+		ans4: "The Cars - Heartbreak City",
+		correctAn: 2,
+		image: "http://media4.giphy.com/media/HI6lQ93tjxQCQ/200.gif"
+};
+var eighty36 = {
+		question: "The 1986 Album of the Year Grammy went to:",
+		ans1: "Phil Collins - No Jacket Required",
+		ans2: "Whitney Houston - Whitney Houston",
+		ans3: "Sting - The Dream Of The Blue Turtles",
+		ans4: "Dire Straits - Brothers In Arms",
+		correctAn: 1,
+		image: "http://media2.giphy.com/media/N6Rhk8gMl4Dlu/200.gif"
+};
+var eighty37 = {
+		question: "The Best Comedy Recording Grammy for 1987 went to:",
+		ans1: "George Carlin - Playin' with Your Head",
+		ans2: "Bill Cosby - Those of You with or without Children, You'll Understand",
+		ans3: "Rodney Dangerfield (Back to School film soundtrack) - Twist and Shout",
+		ans4: "Steven Wright - I Have a Pony",
+		correctAn: 2,
+		image: "http://media0.giphy.com/media/Ay4RnxQwWu9ry/200.gif"
+};
+var eighty38 = {
+		question: "In 1987, the Best New Artist Grammy went to:",
+		ans1: "Glass Tiger",
+		ans2: "Simply Red",
+		ans3: "Bruce Hornsby and The Range",
+		ans4: "Timbuk 3",
+		correctAn: 3,
+		image: "https://media.giphy.com/media/bC2GvTPzPX0Eo/giphy.gif"
+};
+var eighty39 = {
+		question: "In 1988, the Grammy for Best Album Or Original Instrumental Background Score Written For A Motion Picture went to:",
+		ans1: "Henry Mancini - The Glass Menagerie",
+		ans2: "James Horner - An American Tail",
+		ans3: "Mark Knopfler - The Princess Bride",
+		ans4: "Ennio Morricone - The Untouchables",
+		correctAn: 4,
+		image: "http://media0.giphy.com/media/FumKQRJ0VZhug/200.gif"
+};
+var eighty40 = {
+		question: "In 1988, The Song of the Year Grammy went to:",
+		ans1: "Richie Valens - La Bamba",
+		ans2: "U2 - I Still Haven't Found What I'm Looking For",
+		ans3: "James Horner, Barry Mann - Somewhere Out There",
+		ans4: "Michael Masser, Will Jennings - Didn't We Almost Have It All",
+		correctAn: 3,
+		image: "http://media2.giphy.com/media/P0VeD9rG7D5zW/200.gif"
+};
+var eighty41 = {
+		question: "In 1989, The Best Album of the Year Grammy went to:",
+		ans1: "Sting - ...Nothing Like the Sun",
+		ans2: "George Michael - Faith",
+		ans3: "Tracy Chapman - Tracy Chapman",
+		ans4: "Bobby McFerrin - Simple Pleasures",
+		correctAn: 2,
+		image: "http://media4.giphy.com/media/KfQRyOxYjTQsM/200.gif"
+};
+
+var CAnswerArr = [eighty1, eighty2, eighty3, eighty4, eighty5, eighty6, eighty7, eighty8, eighty9, eighty10, eighty11, eighty12, eighty13, eighty14, eighty15, eighty16, eighty17, eighty18, eighty19, eighty20, eighty21, eighty22, eighty23, eighty24, eighty25, eighty26, eighty27, eighty28, eighty29, eighty30, eighty31, eighty32, eighty33, eighty34, eighty35, eighty36, eighty37, eighty38, eighty39, eighty40, eighty41];
 //var ansArray = [ans1, ans2, ans3, ans4];
 var gamestart = false;
 var qindex = -1;
@@ -201,7 +382,7 @@ var qanswerTime = 4000;
 var corrAnswer = 0;
 var playerA = 0;
 var isRight = false;
-var Z = 0; // current question number
+var Z = 0; 
 var cQuestion = [];
 var corrAnswerArr = [];
 var numArray = [];
@@ -211,10 +392,11 @@ var correctAnsNum = 0;
 var inncorrectAns = 0;
 var percentR = 0;
 var endsaying = "";
-var qplayed = -1;
+var qplayed = -1; // current question number
 var showAnswer;
 var DisplayTime;
 var displaytimeInterval;
+var countdown = false;
 
 
 function toggleonQ () { //turn on questions
@@ -301,28 +483,41 @@ function initialize () {
 	console.log("initialize");	
 }
 
-var count=21;
+var count=22;
+var counter;
+function counters() {
+	if (countdown === false) {
+    	counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+    	countdown = true;
+    	count = 20;
+	}
+}
 
-var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
-
-function timer()
-{
+function timer() {
   count--;
-  if (count <= 0 && gamestart === true)
-  {
-     clearInterval(counter);
-     $("#time").css("display", "none");
-     playerA = 0;
-     checkAnswer(playerA);
-     return;
-  }
+ 	 if (count <= 0 && gamestart === true) {
+     	clearInterval(counter);
+     	countdown = false;
+     	$("#time").css("display", "none");
+     	playerA = 0;
+     	$("#time").css("animation-duration", "3s");
+     	checkAnswer(playerA);
+     	return;
+  	}
+  	if (count <= 11 && count >= 6) {
+			$("#time").css("animation-duration", "1.5s");}
+	if (count < 6) {
+			$("#time").css("animation-duration", "0.5s");}
   $("#time").html(count);
 }
 
 function checkAnswer (answ) {
 	$("#time").css("display", "none");
 	toggleoffA();
+	$("#pict").css("display", "table");
+	$("#pict").html('<img src=' + CAnswerArr[numArray[qplayed]].image + '>');
  	if (answ === corrAnswer) {
+
  		$("#question").html("<h2 id='green'>CORRECT!</h2>");
  		correctAnsNum++;
 	}	
@@ -354,8 +549,8 @@ function checkAnswer (answ) {
  				break;
  		}
  	console.log("CheckAnswer");
- 	count=24;
- 	setTimeout(displayQuestion, 3500);
+ 	count=26;
+ 	setTimeout(displayQuestion, 4500);
 }
 
 function setupDisplay () {
@@ -365,7 +560,7 @@ function setupDisplay () {
 
 function directions() {
 	toggleoffA();
-	$("#question").html("<h2>1980's Grammy winner trivia</h2><span id='dir'>You have 20 seconds<br>to answer each question.<br>Click HERE to begin.</span><br><h3>GOOD LUCK !<h3>");
+	$("#question").html("<h2>1980's Grammy winner trivia</h2><span id='dir'>You have about 20 seconds<br>to answer each question.<br>Click HERE to begin.</span><br><h3>GOOD LUCK !<h3>");
 }
 
 function pickQuestions() {
@@ -374,7 +569,7 @@ function pickQuestions() {
 	do {
 		var r = Math.floor(Math.random() * 100);
 
-		if (r >= 0 && r <=20 && numArray.indexOf(r) === -1) {
+		if (r >= 0 && r <=40 && numArray.indexOf(r) === -1) {
 			numArray.push(r);
 			console.log(numArray);
 			i++;	
@@ -386,12 +581,14 @@ function pickQuestions() {
 }
 
 function displayQuestion () {
+	$("#pict").css("display", "none");
 	$("#correct").css("display", "none");
-	counter;
+	counters();
+	$("#time").css("animation-duration", "3s");
 	$("#time").css("display", "inline");
 	if (qplayed < 7){
 		toggleonansreset();
-		toggleonA();
+		toggleonA(); 
 		qplayed++; //need to update before picking question
 		console.log("display Question Function, qplayed = " + qplayed);
 		currentQ = CAnswerArr[numArray[qplayed]].question;
@@ -412,6 +609,7 @@ function displayQuestion () {
 
 function rungameOver () {
 	clearInterval(counter);
+	countdown = false;
 	$("#time").css("display", "none");
 	toggleoffA();
 	$("#reset").css("display", "table");	
@@ -439,6 +637,8 @@ function rungameOver () {
 	});
 }
 function resetGame() {
+	count = 22;
+	$("#time").css("animation-duration", "3s");
 	initialize();
 	pickQuestions();
 	displayQuestion();

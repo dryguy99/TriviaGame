@@ -28,17 +28,31 @@ h3 {
 #dir {
 	color: #002db3;
 }
-#timer {
+#time {
 	display: inline;
-	height: 25px;
-	width: 50px;
-	background-color: none;
+	font-family: 'Space Mono', monospace;
+	min-height: 60px;
+	min-width: 60px;
+	background-color: #ffffcc;
+	font-size: 30px;
+	padding: 5px;
+	color: #0000b3;
+	border-radius: 25px;
+	animation-name: timing;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 #game {
 	background-image: url("../images/gamebg.jpg");
 	min-height: 300px;
 	border-radius: 25px;
 	padding-bottom: 20px;
+}
+img {
+	border-radius: 25px;
+
 }
 
 footer {
@@ -71,7 +85,7 @@ footer {
 	font-weight: 600;
 	display: table;
 	width: 525px;
-	height: 120px;
+	min-height: 120px;
 	margin: 10px auto;
 	margin-bottom: 20px;
 	background-color: #fff2e6;
@@ -98,6 +112,20 @@ footer {
 	border-radius: 25px;
 
 }
+#pict{
+	font-family: 'Mada', sans-serif;
+	display: none;
+	width: 525px;
+	min-height: 60px;
+	margin: 5px auto;
+	background-color: #ffffcc;
+	color: #002db3;
+	font-size: 20px;
+	line-height: 1.1;
+	white-space: normal;
+	padding: 10px;
+	border-radius: 25px;
+}
 .btn:focus {
 	outline: none;
 }
@@ -120,4 +148,8 @@ footer {
 }
 #ans4 {
 	display: table;
+}
+@keyframes timing {
+	from {background-color: #ffff33;}
+	to{background-color: #87592c;}}
 }
