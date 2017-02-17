@@ -399,6 +399,12 @@ var displaytimeInterval;
 var countdown = false;
 
 
+
+function audioPlay(filename) {
+ 		document.getElementById("myaudio").innerHTML='<audio autoplay="autoplay"><source src="' + filename + '.mp3" type="audio/mpeg"><embed hidden="true" autostart="true" loop="false" volume="0.4" src="' + filename +'.mp3"></audio>';
+
+ }
+
 function toggleonQ () { //turn on questions
 	$("#question").css("display", "table");
 	console.log("display on");}
@@ -480,22 +486,44 @@ function initialize () {
 	toggleonQ();
 	$("#correct").css("display", "none");
 	toggleoffA();
-	console.log("initialize");	
+	console.log("initialize");
+
+}
+var	pause = 5;
+var	pausetimer;
+var countup = false;
+function answerpause() {
+	if (countup === false) {
+		pause = 5;
+    	pausetimer = setInterval(timed, 1000); //1000 will  run it every 1 second
+    	countup = true;
+	}
 }
 
+function timed() {
+  		pause--;
+ 	 if (pause <= 0 && gamestart === true) {
+     	clearInterval(pausetimer);
+     	countup = false;
+     	count=22;
+ 		counters();
+ 		displayQuestion();
+     	return;
+  	}
+}
 var count=22;
 var counter;
 function counters() {
 	if (countdown === false) {
     	counter = setInterval(timer, 1000); //1000 will  run it every 1 second
     	countdown = true;
-    	count = 20;
+    	count = 21;
 	}
 }
 
 function timer() {
-  count--;
- 	 if (count <= 0 && gamestart === true) {
+  	count--;
+ 	if (count <= 0 && gamestart === true) {
      	clearInterval(counter);
      	countdown = false;
      	$("#time").css("display", "none");
@@ -510,18 +538,24 @@ function timer() {
 			$("#time").css("animation-duration", "0.5s");}
   $("#time").html(count);
 }
-
+var winaudio = "assets/audio/applause";
+var loseaudio = "assets/audio/sad-trombone";
 function checkAnswer (answ) {
 	$("#time").css("display", "none");
+	clearInterval(counter);
+    countdown = false;
+    count = 22;
+    answerpause();
 	toggleoffA();
 	$("#pict").css("display", "table");
 	$("#pict").html('<img src=' + CAnswerArr[numArray[qplayed]].image + '>');
  	if (answ === corrAnswer) {
-
+		audioPlay(winaudio);
  		$("#question").html("<h2 id='green'>CORRECT!</h2>");
  		correctAnsNum++;
 	}	
 	else { 
+		audioPlay(loseaudio);
 		$("#question").html("<h2>Sorry that is Incorrect.</h2><h2 id='green'>The Correct Answer is:</h2>");
 		inncorrectAns++;
 	}
@@ -529,28 +563,19 @@ function checkAnswer (answ) {
 	switch (corrAnswer) {
  			case 1:
  				$("#correct").html(CAnswerArr[numArray[qplayed]].ans1);
- 				//toggleonans1only();
- 				//$("#ans1").css("display", "table");
  				break;
  			case 2:
  				$("#correct").html(CAnswerArr[numArray[qplayed]].ans2);
- 				//toggleonans2only();
- 				//$("#ans2").css("display", "table");
  				break;
  			case 3:
  				$("#correct").html(CAnswerArr[numArray[qplayed]].ans3);
- 				//toggleonans3only();
- 				//$("#ans3").css("display", "table");
  				break;
  			case 4:
  				$("#correct").html(CAnswerArr[numArray[qplayed]].ans4);
- 				//toggleonans4only();
- 				//$("#ans4").css("display", "table");
  				break;
  		}
  	console.log("CheckAnswer");
- 	count=26;
- 	setTimeout(displayQuestion, 4500);
+ 	
 }
 
 function setupDisplay () {
@@ -560,7 +585,7 @@ function setupDisplay () {
 
 function directions() {
 	toggleoffA();
-	$("#question").html("<h2>1980's Grammy winner trivia</h2><span id='dir'>You have about 20 seconds<br>to answer each question.<br>Click HERE to begin.</span><br><h3>GOOD LUCK !<h3>");
+	$("#question").html("<h2>1980's Grammy winner trivia</h2><span id='dir'>You have 20 seconds<br>to answer each of the<br>8 questions.<br>Click HERE to begin.</span><br><h3>GOOD LUCK !<h3>");
 }
 
 function pickQuestions() {
@@ -585,6 +610,7 @@ function displayQuestion () {
 	$("#correct").css("display", "none");
 	counters();
 	$("#time").css("animation-duration", "3s");
+	$("#time").html("20");
 	$("#time").css("display", "inline");
 	if (qplayed < 7){
 		toggleonansreset();
