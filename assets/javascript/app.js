@@ -1,15 +1,15 @@
 /* Trivia Game*/
 
 //Global Variables
-
-var eighty1 = {
-		question: "Which song won the Grammy for record of the year in 1989?",
-		ans1: "Wind Beneath My Wings",
-		ans2: "Don't Worry, Be Happy",
-		ans3: "Giving You The Best That I Got",
-		ans4: "Fast Car",
-		correctAn: 1,
-		image: "https://media.giphy.com/media/Z6aNFBevc1e8/giphy.gif"
+// questions for trivia quiz
+var eighty1 = { //all 'eighty#' obj are set up the same
+		question: "Which song won the Grammy for record of the year in 1989?", //question to be displayed
+		ans1: "Wind Beneath My Wings", // answer 1
+		ans2: "Don't Worry, Be Happy", //answer 2
+		ans3: "Giving You The Best That I Got", //answer 3
+		ans4: "Fast Car", //answer 4
+		correctAn: 1, //correct answer is 1
+		image: "https://media.giphy.com/media/Z6aNFBevc1e8/giphy.gif" //image to display at question end
 };
 var eighty2 = {
 		question: "In 1989, who win the Grammy for Best Comedy Recording?",
@@ -371,86 +371,43 @@ var eighty41 = {
 		correctAn: 2,
 		image: "http://media4.giphy.com/media/KfQRyOxYjTQsM/200.gif"
 };
-
+// array of obj for random pick function
 var CAnswerArr = [eighty1, eighty2, eighty3, eighty4, eighty5, eighty6, eighty7, eighty8, eighty9, eighty10, eighty11, eighty12, eighty13, eighty14, eighty15, eighty16, eighty17, eighty18, eighty19, eighty20, eighty21, eighty22, eighty23, eighty24, eighty25, eighty26, eighty27, eighty28, eighty29, eighty30, eighty31, eighty32, eighty33, eighty34, eighty35, eighty36, eighty37, eighty38, eighty39, eighty40, eighty41];
-//var ansArray = [ans1, ans2, ans3, ans4];
-var gamestart = false;
-var qindex = -1;
-var currentQ = -1;
-var qtimeLimit = 15000;
-var qanswerTime = 4000;
-var corrAnswer = 0;
-var playerA = 0;
-var isRight = false;
-var Z = 0; 
-var cQuestion = [];
-var corrAnswerArr = [];
-var numArray = [];
-var wins = 0;
-var losses = 0;
-var correctAnsNum = 0;
-var inncorrectAns = 0;
-var percentR = 0;
-var endsaying = "";
+var gamestart = false; // wait for user to read directions before start
+var currentQ = ""; //question to be displayed pulled from current obj
+var corrAnswer = 0; // number of correct answers each game reset each game
+var playerA = 0; // player answer 1 - 4 depending on which buton they click  if timer hits 0 playerA is 0
+var numArray = []; // keeps an array of the index numbers of the questions that will be played in the game assigned randomly and refreshed each game
+var wins = 0; // win counter is increased when a player answers more than 50% of questions correct
+var losses = 0; // loss counter is increased when a player guesses 50% or less of the incorrect answers
+var correctAnsNum = 0; //holds the value of the correct answer from the obj
+var inncorrectAns = 0; //counts the number of incorrect answers guessed each game
+var percentR = 0; //holds the percentage of the correct answers at games end
+var endsaying = ""; // holds the end saying to display depending on the final result
 var qplayed = -1; // current question number
-var showAnswer;
-var DisplayTime;
-var displaytimeInterval;
-var countdown = false;
+var countdown = false; // countdown time is not running when set to false
+var	pause = 6; //pause length in seconds to display correct answer
+var	pausetimer; //sets the time interval for the pause timer for answer display
+var countup = false; // pause timer is not running when set to false
+var count=22; // countdown timer set to 22 seconds
+var counter; //clock timing function
+var winaudio = "assets/audio/applause"; // file for winning audio effect
+var loseaudio = "assets/audio/sad-trombone"; // file for losing audio effect
 
-
-
+// plays sound effects during game
 function audioPlay(filename) {
  		document.getElementById("myaudio").innerHTML='<audio autoplay="autoplay"><source src="' + filename + '.mp3" type="audio/mpeg"><embed hidden="true" autostart="true" loop="false" volume="0.4" src="' + filename +'.mp3"></audio>';
 
  }
-
-function toggleonQ () { //turn on questions
-	$("#question").css("display", "table");
-	console.log("display on");}
+// the functions below are shortcuts to turn on and off the various displays
 
 function toggleonA () { //turn on answers
 	$("#answer").css("display", "table");}
 
-function toggleoffQ () {
-	$("#question").css("display", "none");}
-
-function toggleoffA () {
+function toggleoffA () { // turn off answers
 	$("#answer").css("display", "none");}
 
-function toggleoffQandA () {
-	$("#question").css("display", "none");
-	$("#answer").css("display", "none");}
-
-function toggleonans1only() {
-	toggleonA();
-	$("#ans1").css("display", "table");
-	$("#ans2").css("display", "none");
-	$("#ans3").css("display", "none");
-	$("#ans4").css("display", "none");
-}
-function toggleonans2only () {
-	toggleonA();
-	$("#ans1").css("display", "none");
-	$("#ans2").css("display", "table");
-	$("#ans3").css("display", "none");
-	$("#ans4").css("display", "none");
-}
-function toggleonans3only () {
-	toggleonA();
-	$("#ans1").css("display", "none");
-	$("#ans2").css("display", "none");
-	$("#ans3").css("display", "table");
-	$("#ans4").css("display", "none");
-}
-function toggleonans4only () {
-	toggleonA();
-	$("#ans1").css("display", "none");
-	$("#ans2").css("display", "none");
-	$("#ans3").css("display", "none");
-	$("#ans4").css("display", "table");
-}
-function toggleonansreset () {
+function toggleonansreset () { //reset answer display on with no data
 	toggleoffA();
 	$("#ans1").css("display", "table");
 	$("#ans1").html("");
@@ -461,7 +418,7 @@ function toggleonansreset () {
 	$("#ans4").css("display", "table");
 	$("#ans4").html("");
 }
-function toggleonCorrect () {
+function toggleonCorrect () { //set up correct answer display
 	toggleonA();
 	$("#correct").css("display", "inline");
 	$("#ans1").css("display", "none");
@@ -469,37 +426,30 @@ function toggleonCorrect () {
 	$("#ans3").css("display", "none");
 	$("#ans4").css("display", "none");
 }
-
+//set up variables at beginning of each game
 function initialize () {
-	qindex = -1;
-	currentQ = -1;
+	currentQ = "";
 	corrAnswer = 0;
-	qtimeLimit = 20000;
-	qanswerTime = 4000;
 	numArray = [];
-	cQuestion = [];
 	correctAnsNum = 0;
 	inncorrectAns = 0;
 	percentR = 0;
 	endsaying = "";
 	qplayed = -1;
-	toggleonQ();
 	$("#correct").css("display", "none");
 	toggleoffA();
-	console.log("initialize");
+	//console.log("initialize");
 
 }
-var	pause = 5;
-var	pausetimer;
-var countup = false;
+// pause game to display answer screen  answerpause checks to see if the timer is running
 function answerpause() {
 	if (countup === false) {
-		pause = 5;
+		pause = 6;
     	pausetimer = setInterval(timed, 1000); //1000 will  run it every 1 second
     	countup = true;
 	}
 }
-
+// timed runs the answerpause timer
 function timed() {
   		pause--;
  	 if (pause <= 0 && gamestart === true) {
@@ -511,8 +461,7 @@ function timed() {
      	return;
   	}
 }
-var count=22;
-var counter;
+// set up game timer. this function checks to see if the timer is running
 function counters() {
 	if (countdown === false) {
     	counter = setInterval(timer, 1000); //1000 will  run it every 1 second
@@ -520,7 +469,7 @@ function counters() {
     	count = 21;
 	}
 }
-
+// this function runs the game clock and runs the animation for the clock as well as stops the game when time expires
 function timer() {
   	count--;
  	if (count <= 0 && gamestart === true) {
@@ -538,8 +487,7 @@ function timer() {
 			$("#time").css("animation-duration", "0.5s");}
   $("#time").html(count);
 }
-var winaudio = "assets/audio/applause";
-var loseaudio = "assets/audio/sad-trombone";
+// this function checks if the answer is correct and sets up the correct answer display
 function checkAnswer (answ) {
 	$("#time").css("display", "none");
 	clearInterval(counter);
@@ -548,17 +496,17 @@ function checkAnswer (answ) {
     answerpause();
 	toggleoffA();
 	$("#pict").css("display", "table");
-	$("#pict").html('<img src=' + CAnswerArr[numArray[qplayed]].image + '>');
+	$("#pict").html('<img src=' + CAnswerArr[numArray[qplayed]].image + '>'); //displays a giffy
  	if (answ === corrAnswer) {
-		audioPlay(winaudio);
+		audioPlay(winaudio); //plays winning sound effect
  		$("#question").html("<h2 id='green'>CORRECT!</h2>");
- 		correctAnsNum++;
+ 		correctAnsNum++; // updates correct number of answers
 	}	
 	else { 
-		audioPlay(loseaudio);
+		audioPlay(loseaudio); // plays losing audio effect
 		$("#question").html("<h2>Sorry that is Incorrect.</h2><h2 id='green'>The Correct Answer is:</h2>");
-		inncorrectAns++;
-	}
+		inncorrectAns++; // updates incorrect answers
+	}// the function below turns on the correct answer div and displays the correct answer for the player
 	toggleonCorrect();
 	switch (corrAnswer) {
  			case 1:
@@ -577,70 +525,67 @@ function checkAnswer (answ) {
  	console.log("CheckAnswer");
  	
 }
-
-function setupDisplay () {
-	
-	console.log("buttons set");
-}
-
+// print directions on screen at the beginning of the game
 function directions() {
 	toggleoffA();
 	$("#question").html("<h2>1980's Grammy winner trivia</h2><span id='dir'>You have 20 seconds<br>to answer each of the<br>8 questions.<br>Click HERE to begin.</span><br><h3>GOOD LUCK !<h3>");
 }
-
+//randomly pick the questions from the 41 available runs once each game
 function pickQuestions() {
-	console.log("pick question");
+	//console.log("pick question");
 	var i = 0;
 	do {
 		var r = Math.floor(Math.random() * 100);
 
 		if (r >= 0 && r <=40 && numArray.indexOf(r) === -1) {
 			numArray.push(r);
-			console.log(numArray);
+			//console.log(numArray);
 			i++;	
 		}
 	}
 	while (i < 8);
-	console.log("first Question is: " + CAnswerArr[numArray[(qplayed+1)]].question + " qplayed: " + (qplayed+1));
+	//console.log("first Question is: " + CAnswerArr[numArray[(qplayed+1)]].question + " qplayed: " + (qplayed+1));
 
 }
-
+// display the questions and the timer for the player 
 function displayQuestion () {
 	$("#pict").css("display", "none");
 	$("#correct").css("display", "none");
-	counters();
+	counters(); //restart countdown timer
 	$("#time").css("animation-duration", "3s");
 	$("#time").html("20");
 	$("#time").css("display", "inline");
+	//display 8 questions with this if statement
 	if (qplayed < 7){
 		toggleonansreset();
 		toggleonA(); 
-		qplayed++; //need to update before picking question
-		console.log("display Question Function, qplayed = " + qplayed);
-		currentQ = CAnswerArr[numArray[qplayed]].question;
-		console.log("Made it to display Question " + currentQ);
-		$("#question").html(currentQ);
-		corrAnswer = CAnswerArr[numArray[qplayed]].correctAn;
-		console.log("correct answer number is " + corrAnswer);
+		qplayed++; //need to update before picking question because started at -1
+		//console.log("display Question Function, qplayed = " + qplayed);
+		currentQ = CAnswerArr[numArray[qplayed]].question; //set current question
+		//console.log("Made it to display Question " + currentQ);
+		$("#question").html(currentQ); //display current question
+		corrAnswer = CAnswerArr[numArray[qplayed]].correctAn; //set correct answer
+		//console.log("correct answer number is " + corrAnswer);
+		// display answer buttons for player
 		$("#ans1").html(CAnswerArr[numArray[qplayed]].ans1);
 		$("#ans2").html(CAnswerArr[numArray[qplayed]].ans2);
 		$("#ans3").html(CAnswerArr[numArray[qplayed]].ans3);
 		$("#ans4").html(CAnswerArr[numArray[qplayed]].ans4);
-	}
+	}// after the 8th question played end the game
 	else { 
 		toggleoffA();
 		rungameOver();}
 
 }
-
+// run end game function
 function rungameOver () {
-	clearInterval(counter);
+	clearInterval(counter); // stop the timer
 	countdown = false;
-	$("#time").css("display", "none");
-	toggleoffA();
-	$("#reset").css("display", "table");	
+	$("#time").css("display", "none"); // turn off timer display
+	toggleoffA(); // turn off answer divs
+	$("#reset").css("display", "table"); //turn on reset button
 	$("#question").html("<h2>GAME OVER</h2><span id='dir'>Click Reset to play again.</span>");
-		percentR = Math.round(correctAnsNum / 8 * 100);
+		percentR = Math.round(correctAnsNum / 8 * 100); // find correct answer percentage & set sayings
 		if (percentR > 85) {
 				endsaying = "FABULOUS!<br>You know your 80's trivia!";
 				wins++;}
@@ -651,10 +596,10 @@ function rungameOver () {
 				endsaying = "Better Luck Next Time!";
 				losses++;}
 	toggleonCorrect();
+	// display end game stats
 	$("#correct").html(('Wins: ') + wins + (' - Losses: ') + losses + ('<br>') + correctAnsNum + (' questions correct out of 8.<br><h3>You got ') + percentR + ('% right.<br>') + endsaying);
-	
+	// set up on click event for game reset
 	$("#reset").on("click", function() {
-
 		$("#reset").css("display", "none");
 		$("#reset").off("click");
 		toggleonansreset();
@@ -662,6 +607,7 @@ function rungameOver () {
 		resetGame ();
 	});
 }
+//reset game to play again
 function resetGame() {
 	count = 22;
 	$("#time").css("animation-duration", "3s");
@@ -669,11 +615,7 @@ function resetGame() {
 	pickQuestions();
 	displayQuestion();
 }
-
-function startcheckAnswer () {
-	showAnswer = setInterval(checkAnswer, 4000);
-	console.log("interval set");
-}
+// set up on click events for answer divs
 function runGame() {
 
 			$("#ans1").on("click", function() {
@@ -697,9 +639,7 @@ function runGame() {
 				checkAnswer(playerA);
 			});
 }
-
-
-
+//when loaded run game
 $(document).ready(function () {
 	//setupDisplay();
 	console.log("ready");
@@ -707,6 +647,7 @@ $(document).ready(function () {
 	runGame();
 	$("#time").css("display", "none");
 
+	//when done with directions start game
 	$("#dir").click(function () {
 		$("#dir").click(function(event){
     	event.stopPropagation();
@@ -714,10 +655,6 @@ $(document).ready(function () {
 		gamestart = true;
 		console.log("mainprogram");
 		resetGame();
-		
-
 	});
 
-});
-
-
+}); //end code
