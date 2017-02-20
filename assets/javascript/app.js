@@ -482,9 +482,9 @@ function timer() {
      	return;
   	}
   	if (count <= 11 && count >= 6) {
-			$("#time").css("animation-duration", "1.5s");}
+			$("#time").css("animation-duration", "1.0s");}
 	if (count < 6) {
-			$("#time").css("animation-duration", "0.5s");}
+			$("#time").css("animation-duration", "0.3s");}
   $("#time").html(count);
 }
 // this function checks if the answer is correct and sets up the correct answer display
@@ -522,7 +522,7 @@ function checkAnswer (answ) {
  				$("#correct").html(CAnswerArr[numArray[qplayed]].ans4);
  				break;
  		}
- 	console.log("CheckAnswer");
+ 	//console.log("CheckAnswer");
  	
 }
 // print directions on screen at the beginning of the game
@@ -618,7 +618,7 @@ function resetGame() {
 // set up on click events for answer divs
 function runGame() {
 
-			$("#ans1").on("click", function() {
+			$("#ans1").on("click", function() { 
 				playerA = 1;
 				console.log(playerA + " is the answer");
 				checkAnswer(playerA);
