@@ -22,6 +22,23 @@ h2 {
 h3 {
 	color: #00cc00;
 }
+a {
+	color: white;
+
+}
+a:active {
+	color: white;
+}
+a:visited {
+	color: white;
+}
+a:hover {
+	color: #b3e6ff;
+	text-decoration: none;
+}
+a:focus {
+	text-decoration: none;
+}
 #green{
 	color: #00cc00;
 }
