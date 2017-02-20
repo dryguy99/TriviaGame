@@ -482,9 +482,9 @@ function timer() {
      	return;
   	}
   	if (count <= 11 && count >= 6) {
-			$("#time").css("animation-duration", "1.0s");}
+			$("#time").css("animation-duration", "0.6s");}
 	if (count < 6) {
-			$("#time").css("animation-duration", "0.3s");}
+			$("#time").css("animation-duration", "0.25s");}
   $("#time").html(count);
 }
 // this function checks if the answer is correct and sets up the correct answer display
